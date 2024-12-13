@@ -5,15 +5,19 @@ import EffectSection from "@c/EffectSection";
 import SolutionSection from "@c/SolutionSection";
 import Credits from "@c/Credits";
 
+import "./App.css";
+
 function App() {
   return (
-    <div>
-      <TitleCard />
-      <TopicSection />
-      <CauseSection />
-      <EffectSection />
-      <SolutionSection />
-      <Credits />
+    <div className="AppContainer">
+      <div className="App">
+        <TitleCard />
+        <TopicSection />
+        <CauseSection />
+        <EffectSection />
+        <SolutionSection />
+        <Credits />
+      </div>
     </div>
   );
 }

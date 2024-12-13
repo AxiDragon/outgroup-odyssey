@@ -1,0 +1,16 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f0f0f0;
+	line-height: 1.5;
+}
+
+.App {
+	text-align: center;
+	max-width: 800px;
+}
+
+.AppContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
