@@ -1,11 +1,11 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: #f0f0f0;
 	line-height: 1.5;
 }
 
 .App {
 	text-align: center;
+	width: 100%;
 	max-width: 800px;
 }
 
@@ -13,6 +13,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 }
 
 .TitleCard {
@@ -23,4 +24,12 @@ body {
 	margin-bottom: 50px;
 	width: 100%;
 	box-sizing: border-box;
+}
+
+.ImageSlideShow {
+	width: 100%;
+}
+
+.ImageSlideShow img {
+	width: 100%;
 }

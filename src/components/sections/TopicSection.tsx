@@ -1,3 +1,9 @@
+import ImageSlideShow from "@c/interactables/ImageSlideShow";
+import interactable1 from "@a/placeholder/intro-interactable-1.jpg";
+import interactable2 from "@a/placeholder/intro-interactable-2.jpg";
+import interactable3 from "@a/placeholder/intro-interactable-3.jpg";
+import interactable4 from "@a/placeholder/intro-interactable-4.jpg";
+
 const TopicSection = () => {
 	return (
 		<div>
@@ -24,7 +30,7 @@ const TopicSection = () => {
 				Thus, Gala believes (AKA biases) that the baking skills of the pears (AKA outgroup)
 				are more similar (AKA homogenous) than those of the apples.</p>
 			<p>But, in reality, when we makes all fruits attempt to make their most delicious cakes...</p>
-			<p><sub> Interactable with 9 apples, 9 pears, all clickable, which will move into rows based on their baking skills</sub></p>
+			<ImageSlideShow images={[interactable1, interactable2, interactable3, interactable4]} />
 			<p>...we see that the pears are just as diverse in their baking skills as the apples.</p>
 			<p>Even if it intuitively seems correct to lump a group into the same category,
 				they're actually just as unique as the other group.</p>
