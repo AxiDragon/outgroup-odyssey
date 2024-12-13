@@ -10,6 +10,7 @@ function SliderImage({ images }: Props) {
 	return (
 		<div className="SliderImage">
 			<img src={images[currentImageIndex]} alt="placeholder" />
+			<br />
 			<span>No Bias</span>
 			<input
 				type="range"

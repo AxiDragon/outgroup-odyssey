@@ -1,3 +1,9 @@
+import SliderImage from "@c/interactables/SliderImage";
+
+import fullBias from "@a/placeholder/effect-full-bias.jpg";
+import midBias from "@a/placeholder/effect-mid-bias.jpg";
+import noBias from "@a/placeholder/effect-no-bias.jpg";
+
 const EffectSection = () => {
 	return (
 		<div>
@@ -9,13 +15,16 @@ const EffectSection = () => {
 				of outgroups, which, in turn, can lead to discrimination.</p>
 			<p>What if Gala was actually a cooking teacher of all the pears, and they needed
 				to sort the apples and pears into three groups to ensure each pear has sufficient challenge?</p>
-			<p><sub>Tool with bias slider, showing how many pears receive too much
-				or too little challenge if the bias is too high</sub></p>
+			<SliderImage images={[noBias, midBias, fullBias]} />
+			<p style={{ fontSize: 10 }}>
+				<span style={{ color: 'red' }}>red:</span> too much challenge,
+				<span style={{ color: 'blue' }}> blue</span>: too little challenge
+			</p>
 			<p>If Gala's bias shone through, it could result in some pears stressing out from the pressure,
 				and other pears being bored to death!</p>
 			<p>This could, in turn, result in long-term disadvantages.</p>
 			<p><i>(Of course, there's more causes to this than just this bias,
-				but outgroup homogeneity does play a part.)</i></p>
+				but outgroup homogeneity bias does play a part.)</i></p>
 		</div>
 	);
 }
