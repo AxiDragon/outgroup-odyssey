@@ -1,4 +1,17 @@
 import ImageSlideShow from "@c/interactables/ImageSlideShow";
+
+import gala from "@a/placeholder/gala.jpg";
+import galaAndApples from "@a/placeholder/gala-and-apples.jpg";
+import galaAndPears from "@a/placeholder/gala-and-pears.jpg";
+
+import galaIntro1 from "@a/placeholder/gala-intro-1.jpg";
+import galaIntro2 from "@a/placeholder/gala-intro-2.jpg";
+import galaIntro3 from "@a/placeholder/gala-intro-3.jpg";
+import galaIntro4 from "@a/placeholder/gala-intro-4.jpg";
+import galaIntro4Graph from "@a/placeholder/gala-intro-4g.jpg";
+import galaIntro5 from "@a/placeholder/gala-intro-5.jpg";
+import galaIntro5Graph from "@a/placeholder/gala-intro-5g.jpg";
+
 import interactable1 from "@a/placeholder/intro-interactable-1.jpg";
 import interactable2 from "@a/placeholder/intro-interactable-2.jpg";
 import interactable3 from "@a/placeholder/intro-interactable-3.jpg";
@@ -14,18 +27,21 @@ const TopicSection = () => {
 				whilst the pears are... accountants. Or construction workers. Or professional athletes.
 				Whatever you'd consider as an outgroup.</p>
 			<p>Say we have this apple, Gala.</p>
-			<p><sub> Picture of Gala </sub></p>
+			<img src={gala} />
 			<p>And Gala knows many different other apples. And Gala knows they're an apple,
 				like other apples (one of Gala's so-called ingroups).</p>
-			<p><sub> Picture of Gala with other apples </sub></p>
+			<img src={galaAndApples} />
 			<p>Gala also knows the existence of pears, but hasn't really interacted with them
 				(again, the outgroup).</p>
-			<p><sub> Picture of Gala with pears in the distance </sub></p>
+			<img src={galaAndPears} />
 			<p>We then present Gala a task.</p>
-			<p><sub> Gala with a piece of paper </sub></p>
-			<p><sub> Gala looking up, saying "I... need to say what percentage of apples and pears are bad, alright or good at baking?" </sub></p>
-			<p><sub> Gala talking about 3 apples, one bad, one okay, one good, with the resulting distributed graph on the right (the graph should probably be a component) </sub></p>
-			<p><sub> Gala talking about the pears, unsure, with the resulting graph on the right - not distributed </sub></p>
+			<img src={galaIntro1} />
+			<img src={galaIntro2} />
+			<img src={galaIntro3} />
+			<img src={galaIntro4} />
+			<img src={galaIntro4Graph} />
+			<img src={galaIntro5} />
+			<img src={galaIntro5Graph} />
 			<p>...compared to apples, there's less distribution between the three options.
 				Thus, Gala believes (AKA biases) that the baking skills of the pears (AKA outgroup)
 				are more similar (AKA homogenous) than those of the apples.</p>
