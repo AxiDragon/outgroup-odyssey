@@ -27,6 +27,9 @@
       "@c/*": [
         "./components/*"
       ],
+      "@a/*": [
+        "./assets/*"
+      ],
     }
   },
   "include": [
