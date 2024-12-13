@@ -33,6 +33,11 @@ img {
 	box-sizing: border-box;
 }
 
+.Credits {
+	list-style-position: inside;
+	margin-top: 100px;
+}
+
 .ImageSlideShow {
 	width: 100%;
 }
