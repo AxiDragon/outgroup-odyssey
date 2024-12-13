@@ -1,8 +1,8 @@
 import TitleCard from "@c/TitleCard";
-import TopicSection from "@c/TopicSection";
-import CauseSection from "@c/CauseSection";
-import EffectSection from "@c/EffectSection";
-import SolutionSection from "@c/SolutionSection";
+import TopicSection from "@/components/sections/TopicSection";
+import CauseSection from "@/components/sections/CauseSection";
+import EffectSection from "@/components/sections/EffectSection";
+import SolutionSection from "@/components/sections/SolutionSection";
 import Credits from "@c/Credits";
 
 import "./App.css";
