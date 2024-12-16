@@ -16,9 +16,9 @@ const EffectSection = () => {
 			<p>What if Gala was actually a cooking teacher of all the pears, and they needed
 				to sort the apples and pears into three groups to ensure each pear has sufficient challenge?</p>
 			<SliderImage images={[noBias, midBias, fullBias]} />
-			<p style={{ fontSize: 10 }}>
-				<span style={{ color: 'red' }}>red:</span> too much challenge,
-				<span style={{ color: 'blue' }}> blue</span>: too little challenge
+			<p>
+				<i><span style={{ color: 'red' }}>red:</span> too much challenge,
+					<span style={{ color: 'blue' }}> blue</span>: too little challenge</i>
 			</p>
 			<p>If Gala's bias shone through, it could result in some pears stressing out from the pressure,
 				and other pears being bored to death!</p>

@@ -21,8 +21,8 @@ const TopicSection = () => {
 	return (
 		<div>
 			<h2>OUTGROUP HOMOGENEITY BIAS? WHAT'S THAT?</h2>
-			<p>Outgroup homogeneity bias is the phenomenon that we underestimate the differences among
-				members of a group that we are not a part of (the so-called outgroup).</p>
+			<p>Outgroup homogeneity bias refers to the tendency to underestimate
+				the differences among members of a group to which we do not belong (the so-called outgroup).</p>
 			<p>For example, we have apples and pears. If it helps, imagine that the apples are your group of friends,
 				whilst the pears are... accountants. Or construction workers. Or professional athletes.
 				Whatever you'd consider as an outgroup.</p>
@@ -45,7 +45,7 @@ const TopicSection = () => {
 			<p>...compared to apples, there's less distribution between the three options.
 				Thus, Gala believes (AKA biases) that the baking skills of the pears (AKA outgroup)
 				are more similar (AKA homogenous) than those of the apples.</p>
-			<p>But, in reality, when we makes all fruits attempt to make their most delicious cakes...</p>
+			<p>But, in reality, when we make all fruits attempt to make their most delicious cakes...</p>
 			<ImageSlideShow images={[interactable1, interactable2, interactable3, interactable4]} />
 			<p>...we see that the pears are just as diverse in their baking skills as the apples.</p>
 			<p>Even if it intuitively seems correct to lump a group into the same category,
