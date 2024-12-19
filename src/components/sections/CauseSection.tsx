@@ -1,4 +1,5 @@
-import SliderImage from "../interactables/SliderImage";
+import SliderImage from "@c/interactables/SliderImage";
+import MemoryGraphSlider from "@c/interactables/MemoryGraphSlider";
 
 import fullBias from "@a/placeholder/cause-full-bias.jpg";
 import midBias from "@a/placeholder/cause-mid-bias.jpg";
@@ -13,7 +14,7 @@ const CauseSection = () => {
 			<p>One reason is that thinking that an outgroup consists of all the same sorts of people
 				is far easier on the brain. You don't have to remember as many things.
 				Try messing with the tool below!</p>
-			<SliderImage images={[noBias, midBias, fullBias]} />
+			<MemoryGraphSlider />
 			<p>See how much <b>easier</b> it is to just summarize a group of people that are all the same?</p>
 		</div>
 	);
