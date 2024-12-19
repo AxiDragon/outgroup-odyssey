@@ -35,6 +35,7 @@ const TopicSection = () => {
 				(again, the outgroup).</p>
 			<img src={galaAndPears} />
 			<p>We then present Gala a task.</p>
+			{/* TODO: should concern friendliness instead */}
 			<img src={galaIntro1} />
 			<img src={galaIntro2} />
 			<img src={galaIntro3} />
@@ -43,11 +44,11 @@ const TopicSection = () => {
 			<img src={galaIntro5} />
 			<img src={galaIntro5Graph} />
 			<p>...compared to apples, there's less distribution between the three options.
-				Thus, Gala believes (AKA biases) that the baking skills of the pears (AKA outgroup)
-				are more similar (AKA homogenous) than those of the apples.</p>
-			<p>But, in reality, when we make all fruits attempt to make their most delicious cakes...</p>
+				Thus, Gala believes (AKA biases) that friendliness of the pears (AKA outgroup)
+				is more similar (AKA homogenous) than that of the apples.</p>
+			<p>But, in reality, when we check the friendliness of all apples one by one...</p>
 			<ImageSlideShow images={[interactable1, interactable2, interactable3, interactable4]} />
-			<p>...we see that the pears are just as diverse in their baking skills as the apples.</p>
+			<p>...we see that the pears are just as diverse in how friendly they are as the apples.</p>
 			<p>Even if it intuitively seems correct to lump a group into the same category,
 				they're actually just as unique as the other group.</p>
 		</div>

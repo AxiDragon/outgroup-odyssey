@@ -11,17 +11,19 @@ const EffectSection = () => {
 			<p>Yeah, it's true that your brain uses the bias to conserve memory space.
 				But, by doing this, it also generalizes people from outgroups.
 				A person from an outgroup becomes 'just another one of those'.</p>
-			<p>What this results in is that we feel less empathy for people
-				of outgroups, which, in turn, can lead to discrimination.</p>
-			<p>What if Gala was actually a cooking teacher of all the pears, and they needed
-				to sort the apples and pears into three groups to ensure each pear has sufficient challenge?</p>
+			<p>What this results in is that characteristics of people from outgroups are perceived as less 'strong'.</p>
+			<p>This can be an issue in 'winner-takes-all' scenarios.</p>
+			<p>Some literal examples are the 'Miss Congeniality' title in RuPaul's Drag Race, which is awarded to the kindest, most helpful contestant.
+				Or how the winner of 'Big Brother' is mostly determined by how charismatic a contestant is.</p>
+			<p>Usually, But, in a more serious context, this bias can also lead to discrimination in the workplace.</p>
+			<p>For example, in a job interview, the interviewer might perceive the candidate from the outgroup as less competent or friendly.</p>
+			<p>What if Gala was a recruiter, and needed to pick the friendliest candidate from a group consisting of apples and pears?</p>
 			<SliderImage images={[noBias, midBias, fullBias]} />
 			<p>
 				<i><span style={{ color: 'red' }}>red:</span> too much challenge,
 					<span style={{ color: 'blue' }}> blue</span>: too little challenge</i>
 			</p>
-			<p>If Gala's bias shone through, it could result in some pears stressing out from the pressure,
-				and other pears being bored to death!</p>
+			<p>If Gala's bias shone through, you can see that pears barely have any chance of landing a job.</p>
 			<p>This could, in turn, result in long-term disadvantages.</p>
 			<p><i>(Of course, there's more causes to this than just this bias,
 				but outgroup homogeneity bias does play a part.)</i></p>
