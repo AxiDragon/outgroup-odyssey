@@ -1,9 +1,4 @@
-import SliderImage from "@c/interactables/SliderImage";
 import MemoryGraphSlider from "@c/interactables/MemoryGraphSlider";
-
-import fullBias from "@a/placeholder/cause-full-bias.jpg";
-import midBias from "@a/placeholder/cause-mid-bias.jpg";
-import noBias from "@a/placeholder/cause-no-bias.jpg";
 
 const CauseSection = () => {
 	return (

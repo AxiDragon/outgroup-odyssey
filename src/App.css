@@ -23,6 +23,26 @@ img {
 	width: 100%;
 }
 
+.MemoryGraphSlider {
+	width: 100%;
+}
+
+.LabelledSliderContainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+}
+
+.LabelledSlider {
+	width: 60%;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	gap: 10px;
+}
+
 .TitleCard {
 	background-color: #fff;
 	border-radius: 5px;
