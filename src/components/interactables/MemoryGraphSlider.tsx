@@ -1,9 +1,9 @@
 
-import { Chart, CategoryScale, LinearScale, Title, Tooltip, Legend, PointElement, LineElement } from "chart.js";
+import { Chart, CategoryScale, LinearScale, Title, Tooltip, Legend, PointElement, LineElement, Filler } from "chart.js";
 import { useState } from "react";
 import { Line } from "react-chartjs-2";
 
-Chart.register(CategoryScale, LinearScale, LineElement, PointElement, Title, Tooltip, Legend);
+Chart.register(CategoryScale, LinearScale, LineElement, PointElement, Title, Tooltip, Legend, Filler);
 
 const MemoryGraphSlider = () => {
 	const pointCount = 50;
@@ -17,7 +17,7 @@ const MemoryGraphSlider = () => {
 		return points.map(formula);
 	}
 
-	const formula = (x: number) => Math.pow(x * (1 - bias), 1.2);
+	const formula = (x: number) => Math.pow(x * (1 - bias), 1.1) + 5;
 
 	const yPoints = generateData(formula, Array.from({ length: pointCount }, (_, i) => i));
 
@@ -26,7 +26,8 @@ const MemoryGraphSlider = () => {
 		datasets: [
 			{
 				data: yPoints,
-				fill: false,
+				fill: true,
+				backgroundColor: `rgba(${(1 - bias) * 255},0,${bias * 255},0.2)`,
 				borderColor: `rgb(${(1 - bias) * 255},0,${bias * 255})`,
 				borderWidth: 3,
 				tension: 0.1,
@@ -52,9 +53,6 @@ const MemoryGraphSlider = () => {
 				radius: 0,
 				hoverRadius: 0,
 			},
-			line: {
-
-			}
 		},
 		scales: {
 			x: {
@@ -79,8 +77,8 @@ const MemoryGraphSlider = () => {
 				}
 			},
 			y: {
-				min: -10,
-				max: 110,
+				min: 0,
+				max: 80,
 				ticks: {
 					display: false,
 				},
