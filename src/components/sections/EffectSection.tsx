@@ -23,7 +23,7 @@ const EffectSection = () => {
 				<i><span style={{ color: 'red' }}>red:</span> too much challenge,
 					<span style={{ color: 'blue' }}> blue</span>: too little challenge</i>
 			</p>
-			<p>If Gala's bias shone through, you can see that pears barely have any chance of landing a job.</p>
+			<p>If Gala's bias shone through, you can see that pears barely have any chance of landing a job. (source)</p>
 			<p>This could, in turn, result in long-term disadvantages.</p>
 			<p><i>(Of course, there's more causes to this than just this bias,
 				but outgroup homogeneity bias does play a part.)</i></p>

@@ -17,7 +17,7 @@ const MemoryGraphSlider = () => {
 		return points.map(formula);
 	}
 
-	const formula = (x: number) => Math.pow(x * (1 - bias), 1.1) + 5;
+	const formula = (x: number) => Math.pow(x * (1 - bias), 2) + 150;
 
 	const yPoints = generateData(formula, Array.from({ length: pointCount }, (_, i) => i));
 
@@ -78,7 +78,7 @@ const MemoryGraphSlider = () => {
 			},
 			y: {
 				min: 0,
-				max: 80,
+				max: 2750,
 				ticks: {
 					display: false,
 				},
@@ -119,6 +119,12 @@ const MemoryGraphSlider = () => {
 				<span>Full Bias</span>
 			</div>
 		</div>
+		<p>For reference, if there was a group of 50 people,
+			and you wanted to remember 5 traits per person,
+			you would, with your current level of bias, want to remember {Math.ceil((1 - bias) * 49 * 5 + 5)} traits.</p>
+		<p>Simply grouping everyone together as having 5 traits would be {Math.ceil((1 - bias) * 49 * 5 + 5) / 5}x as easy.
+			If you also take into account that it gets harder and harder to remember new information
+			if your brain already has a lot of new information to process, that number becomes even bigger. (source)</p>
 		{/* TODO: Draggable values */}
 	</div>);
 };
