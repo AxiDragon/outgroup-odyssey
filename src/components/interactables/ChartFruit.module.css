@@ -1,0 +1,18 @@
+.fruit {
+	height: 100px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.fruit img {
+	height: 100px;
+}
+
+.apple {
+	background-color: tomato;
+}
+
+.pear {
+	background-color: greenyellow;
+}
