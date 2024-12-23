@@ -10,7 +10,7 @@ const CauseSection = () => {
 				is far easier on the brain. You don't have to remember as many things.
 				Try messing with the tool below!</p>
 			<MemoryGraphSlider />
-			<p>See how much <b>easier</b> it is to just summarize a group of people that are all the same?</p>
+			<p>See how much easier it is to just summarize a group of people that are all the same?</p>
 		</div>
 	);
 }
