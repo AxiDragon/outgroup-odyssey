@@ -16,13 +16,15 @@ import interactable1 from "@a/placeholder/intro-interactable-1.jpg";
 import interactable2 from "@a/placeholder/intro-interactable-2.jpg";
 import interactable3 from "@a/placeholder/intro-interactable-3.jpg";
 import interactable4 from "@a/placeholder/intro-interactable-4.jpg";
+import Footnote from "../Footnote";
 
 const TopicSection = () => {
 	return (
 		<div>
 			<h2>OUTGROUP HOMOGENEITY BIAS? WHAT'S THAT?</h2>
 			<p>Outgroup homogeneity bias refers to the tendency to underestimate
-				the differences among members of a group to which we do not belong (the so-called outgroup).</p>
+				the differences among members of a group to which we do not belong (the so-called outgroup).
+				<Footnote referenceId={1} /> </p>
 			<p>For example, we have apples and pears. If it helps, imagine that the apples are your group of friends,
 				whilst the pears are... accountants. Or construction workers. Or professional athletes.
 				Whatever you'd consider as an outgroup.</p>
@@ -49,8 +51,8 @@ const TopicSection = () => {
 			<p>But, in reality, when we check the friendliness of all apples one by one...</p>
 			<ImageSlideShow images={[interactable1, interactable2, interactable3, interactable4]} />
 			<p>...we see that the pears are just as diverse in how friendly they are as the apples.</p>
-			<p>Even if it intuitively seems correct to lump a group into the same category,
-				they're actually just as unique as the other group.</p>
+			<p>Even if it intuitively seems correct to lump everyone in an outgroup into the same category,
+				they're actually just as unique as an ingroup.</p>
 		</div>
 	);
 }

@@ -5,6 +5,7 @@ import solution2 from "@a/placeholder/solution-2.jpg";
 import solution3 from "@a/placeholder/solution-3.jpg";
 import solution4 from "@a/placeholder/solution-4.jpg";
 import solution5 from "@a/placeholder/solution-5.jpg";
+import Footnote from "../Footnote";
 
 const SolutionSection = () => {
 	return (
@@ -18,7 +19,7 @@ const SolutionSection = () => {
 			<p>Once you do realize that you're generalizing an outgroup, though - what do you do then?</p>
 			<ImageSlideShow images={[solution1, solution2, solution3, solution4, solution5]} />
 			<p style={{ fontSize: 10 }}><i>Tap the image!</i></p>
-			<p>...try to make the mental ingroup you're in, contain the outgroup too!</p>
+			<p>...try to make the mental ingroup you're in, contain the outgroup too!<Footnote referenceId={5} /></p>
 			<p><i>I should put a better ending here. but I'm not sure what exactly. give me ideas please</i></p>
 		</div>
 	);

@@ -3,6 +3,7 @@ import SliderImage from "@c/interactables/SliderImage";
 import fullBias from "@a/placeholder/effect-full-bias.jpg";
 import midBias from "@a/placeholder/effect-mid-bias.jpg";
 import noBias from "@a/placeholder/effect-no-bias.jpg";
+import Footnote from "../Footnote";
 
 const EffectSection = () => {
 	return (
@@ -15,8 +16,8 @@ const EffectSection = () => {
 			<p>This can be an issue in 'winner-takes-all' scenarios.</p>
 			<p>Some literal examples are the 'Miss Congeniality' title in RuPaul's Drag Race, which is awarded to the kindest, most helpful contestant.
 				Or how the winner of 'Big Brother' is mostly determined by how charismatic a contestant is.</p>
-			<p>Usually, But, in a more serious context, this bias can also lead to discrimination in the workplace.</p>
-			<p>For example, in a job interview, the interviewer might perceive the candidate from the outgroup as less competent or friendly.</p>
+			<p>In a more serious context, outgroup homogeneity bias can also lead to discrimination in the workplace.</p>
+			<p>For example, in a job interview, the interviewer might perceive the candidate from an outgroup as less competent or friendly.<Footnote referenceId={4} /></p>
 			<p>What if Gala was a recruiter, and needed to pick the friendliest candidate from a group consisting of apples and pears?</p>
 			<SliderImage images={[noBias, midBias, fullBias]} />
 			<p>

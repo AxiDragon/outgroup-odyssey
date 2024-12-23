@@ -1,16 +1,18 @@
 import MemoryGraphSlider from "@c/interactables/MemoryGraphSlider";
+import Footnote from "../Footnote";
 
 const CauseSection = () => {
 	return (
 		<div>
 			<h2>RIGHT, THAT MAKES SENSE. BUT WHY?</h2>
-			<p>There's many different reasons as to what exactly causes this bias!
-				Some are being disputed, others are still being researched.</p>
-			<p>One reason is that thinking that an outgroup consists of all the same sorts of people
-				is far easier on the brain. You don't have to remember as many things.
-				Try messing with the tool below!</p>
+			<p>One potential reason is simply that we don't interact much with outgroups,
+				and therefore don't know people from outgroups as well.
+				However, this is disputed since outgroup homogeneity bias still occurs in groups that
+				frequently interact with each other, like men and women.<Footnote referenceId={2} /></p>
+			<p>Another reasons that has more consensus is that thinking that an outgroup consists of all the same sorts of people
+				is far easier on the brain. You don't have to remember as many things.<Footnote referenceId={3} /></p>
+			<p>Try messing with the tool below!</p>
 			<MemoryGraphSlider />
-			<p>See how much easier it is to just summarize a group of people that are all the same?</p>
 		</div>
 	);
 }
