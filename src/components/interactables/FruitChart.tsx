@@ -9,8 +9,10 @@ type Props = {
 	fruitData: [FruitProps[], FruitProps[], FruitProps[]];
 };
 
+const minLength = 4;
+
 const FruitChart = ({ fruitData }: Props) => {
-	const maxLength = Math.max(...fruitData.map(c => c.length));
+	const maxLength = Math.max(...fruitData.map(c => c.length), minLength);
 
 	//fill in empty spaces with 'none' fruits, to ensure each column has the same length
 	fruitData.forEach(c => {
