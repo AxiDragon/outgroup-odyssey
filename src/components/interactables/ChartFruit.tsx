@@ -12,7 +12,7 @@ import pearNeutral from "@a/placeholder/pear-neutral.png";
 import pearUnfriendly from "@a/placeholder/pear-unfriendly.png";
 import pearQuestion from "@a/placeholder/pear-question.png";
 
-export type FruitType = 'apple' | 'pear';
+export type FruitType = 'apple' | 'pear' | 'none';
 export type SubType = 'friendly' | 'neutral' | 'unfriendly' | 'none' | 'question';
 
 export type FruitProps = {
@@ -42,9 +42,12 @@ const ChartFruit = ({ fruitType, subType = 'question' }: FruitProps) => {
 	}
 
 	return (
-		<div className={styles.fruit}>
-			<img src={getImageSrc()} alt={fruitType} />
-		</div>
+		fruitType === 'none' ?
+			<div className={styles.empty} /> //for empty spaces in FruitCharts
+			:
+			<div className={styles.fruit}>
+				<img src={getImageSrc()} alt={fruitType} />
+			</div>
 	);
 }
 

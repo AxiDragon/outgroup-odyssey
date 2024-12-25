@@ -1,8 +1,5 @@
 .fruit {
 	height: 100px;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: transform 0.2s;
 }
 
 .fruit img {
@@ -15,4 +12,8 @@
 
 .pear {
 	background-color: greenyellow;
+}
+
+.empty {
+	height: 100px;
 }

@@ -10,6 +10,15 @@ type Props = {
 };
 
 const FruitChart = ({ fruitData }: Props) => {
+	const maxLength = Math.max(...fruitData.map(c => c.length));
+
+	//fill in empty spaces with 'none' fruits, to ensure each column has the same length
+	fruitData.forEach(c => {
+		while (c.length < maxLength) {
+			c.unshift({ fruitType: 'none' });
+		}
+	})
+
 	return (
 		<div className={styles.parentContainer}>
 			<div className={styles.container}>
