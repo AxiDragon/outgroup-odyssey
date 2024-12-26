@@ -4,6 +4,7 @@ import fullBias from "@a/placeholder/effect-full-bias.jpg";
 import midBias from "@a/placeholder/effect-mid-bias.jpg";
 import noBias from "@a/placeholder/effect-no-bias.jpg";
 import Footnote from "../Footnote";
+import BiasFruitChart from "../interactables/BiasFruitChart";
 
 const EffectSection = () => {
 	return (
@@ -19,11 +20,7 @@ const EffectSection = () => {
 			<p>In a more serious context, outgroup homogeneity bias can also lead to discrimination in the workplace.</p>
 			<p>For example, in a job interview, the interviewer might perceive the candidate from an outgroup as less competent or friendly.<Footnote referenceId={4} /></p>
 			<p>What if Gala was a recruiter, and needed to pick the friendliest candidate from a group consisting of apples and pears?</p>
-			<SliderImage images={[noBias, midBias, fullBias]} />
-			<p>
-				<i><span style={{ color: 'red' }}>red:</span> too much challenge,
-					<span style={{ color: 'blue' }}> blue</span>: too little challenge</i>
-			</p>
+			<BiasFruitChart />
 			<p>If Gala's bias shone through, you can see that pears barely have any chance of landing a job. (source)</p>
 			<p>This could, in turn, result in long-term disadvantages.</p>
 			<p><i>(Of course, there's more causes to this than just this bias,

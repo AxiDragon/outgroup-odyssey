@@ -7,11 +7,12 @@ import unfriendly from "@a/placeholder/unfriendly.png";
 
 type Props = {
 	fruitData: [FruitProps[], FruitProps[], FruitProps[]];
+	minLength?: number;
+	fruitHeight?: number;
 };
 
-const minLength = 4;
-
-const FruitChart = ({ fruitData }: Props) => {
+//TODO: Grid?
+const FruitChart = ({ fruitData, minLength = 4, fruitHeight = 100 }: Props) => {
 	const maxLength = Math.max(...fruitData.map(c => c.length), minLength);
 
 	//fill in empty spaces with 'none' fruits, to ensure each column has the same length
@@ -33,11 +34,12 @@ const FruitChart = ({ fruitData }: Props) => {
 								style={{
 									borderRight: i === 1 ? '5px solid black' : 'none',
 									borderLeft: i === 1 ? '5px solid black' : 'none',
+									gridTemplateColumns: `repeat(${Math.ceil(100 / fruitHeight)}, 1fr)`,
 								}}
 							// TODO: Fix that each column will match the height of the tallest column
 							>
 								{column.map((fruit, j) => (
-									<ChartFruit key={j} {...fruit} />
+									<ChartFruit key={j} {...fruit} height={fruitHeight} />
 								))}
 							</div>
 						))

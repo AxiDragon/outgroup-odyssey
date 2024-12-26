@@ -18,9 +18,10 @@ export type SubType = 'friendly' | 'neutral' | 'unfriendly' | 'none' | 'question
 export type FruitProps = {
 	fruitType: FruitType;
 	subType?: SubType;
+	height?: number;
 };
 
-const ChartFruit = ({ fruitType, subType = 'question' }: FruitProps) => {
+const ChartFruit = ({ fruitType, subType = 'question', height = 100 }: FruitProps) => {
 	function getImageSrc(): string {
 		if (fruitType === 'apple') {
 			switch (subType) {
@@ -43,10 +44,16 @@ const ChartFruit = ({ fruitType, subType = 'question' }: FruitProps) => {
 
 	return (
 		fruitType === 'none' ?
-			<div className={styles.empty} /> //for empty spaces in FruitCharts
+			<div className={styles.empty} style={{
+				height: height,
+			}} /> //for empty spaces in FruitCharts
 			:
-			<div className={styles.fruit}>
-				<img src={getImageSrc()} alt={fruitType} />
+			<div className={styles.fruit} style={{
+				height: height,
+			}} >
+				<img src={getImageSrc()} alt={fruitType} style={{
+					height: height,
+				}} />
 			</div>
 	);
 }
