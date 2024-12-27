@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FruitProps } from "./ChartFruit";
 import FruitChart from "./FruitChart";
 
-const batchCount = 6;
+const batchCount = 20;
 
 const BiasFruitChart = () => {
 	const baseData: [FruitProps[], FruitProps[], FruitProps[]] = [
@@ -35,7 +35,7 @@ const BiasFruitChart = () => {
 
 	return (
 		<div>
-			<FruitChart minLength={batchCount * 4} fruitData={getBiasedFruitData()} fruitHeight={45} />
+			<FruitChart minLength={batchCount * 4} fruitData={getBiasedFruitData()} fruitHeight={20} />
 			<div className="LabelledSliderContainer">
 				<div className="LabelledSlider">
 					<span>No Bias</span>
@@ -51,6 +51,13 @@ const BiasFruitChart = () => {
 					<span>Full Bias</span>
 				</div>
 			</div>
+			<p>In this example, there are a total of {batchCount * 6} candidates. With your current level of
+				bias, {batchCount} apples are perceived as friendly,
+				whilst <b>{batchCount - Math.ceil(batchCount * bias)}</b> pears are perceived as friendly.
+				If a candidate from the 'Friendly' category was chosen, there would currently be
+				a <b>{Math.ceil(50 + bias * 50)}%</b> chance that it is an apple,
+				and a <b>{Math.floor(50 - bias * 50)}%</b> chance that it is a pear.
+			</p>
 		</div>
 	);
 };
