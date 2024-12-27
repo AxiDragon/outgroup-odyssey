@@ -23,7 +23,7 @@ const BiasFruitChart = () => {
 			[...baseData[2]],
 		]
 
-		const toNeutral = Math.ceil(batchCount * bias);
+		const toNeutral = Math.floor(batchCount * bias);
 
 		biasedData[0].unshift(...Array(batchCount - toNeutral).fill({ fruitType: "pear", subType: "unfriendly" }));
 		biasedData[1].unshift(...Array(toNeutral).fill({ fruitType: "pear", subType: "unfriendly" }));
@@ -53,10 +53,10 @@ const BiasFruitChart = () => {
 			</div>
 			<p>In this example, there are a total of {batchCount * 6} candidates. With your current level of
 				bias, {batchCount} apples are perceived as friendly,
-				whilst <b>{batchCount - Math.ceil(batchCount * bias)}</b> pears are perceived as friendly.
+				whilst <b>{batchCount - Math.floor(batchCount * bias)}</b> pears are perceived as friendly.
 				If a candidate from the 'Friendly' category was chosen, there would currently be
-				a <b>{Math.ceil(50 + bias * 50)}%</b> chance that it is an apple,
-				and a <b>{Math.floor(50 - bias * 50)}%</b> chance that it is a pear.
+				a <b>{Math.round(1 / (2 - bias) * 100)}%</b> chance that it is an apple,
+				and a <b>{Math.round((1 - 1 / (2 - bias)) * 100)}%</b> chance that it is a pear.
 			</p>
 		</div>
 	);
