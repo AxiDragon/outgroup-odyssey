@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.82ec8510.css",
-    "main.js": "./static/js/main.8496eae6.js",
+    "main.js": "./static/js/main.092a1c94.js",
     "static/media/intro-interactable-1.jpg": "./static/media/intro-interactable-1.b0e61f78a5d86b4638f3.jpg",
     "static/media/intro-interactable-4.jpg": "./static/media/intro-interactable-4.18e6b3e2c384ac8a36ec.jpg",
     "static/media/apple-question.png": "./static/media/apple-question.7584cb4aec683a16dc0f.png",
@@ -34,10 +34,10 @@
     "static/media/gala-and-pears.jpg": "./static/media/gala-and-pears.64d017dc66c6873be620.jpg",
     "index.html": "./index.html",
     "main.82ec8510.css.map": "./static/css/main.82ec8510.css.map",
-    "main.8496eae6.js.map": "./static/js/main.8496eae6.js.map"
+    "main.092a1c94.js.map": "./static/js/main.092a1c94.js.map"
   },
   "entrypoints": [
     "static/css/main.82ec8510.css",
-    "static/js/main.8496eae6.js"
+    "static/js/main.092a1c94.js"
   ]
 }
