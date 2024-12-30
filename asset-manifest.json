@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "./static/css/main.82ec8510.css",
-    "main.js": "./static/js/main.092a1c94.js",
+    "main.css": "./static/css/main.391ce810.css",
+    "main.js": "./static/js/main.5a9d460d.js",
     "static/media/intro-interactable-1.jpg": "./static/media/intro-interactable-1.b0e61f78a5d86b4638f3.jpg",
+    "static/media/cherry-neutral.png": "./static/media/cherry-neutral.509239e40f115c0c3837.png",
+    "static/media/cherry-friendly.png": "./static/media/cherry-friendly.3df3e6682f536a828e35.png",
+    "static/media/orange-neutral.png": "./static/media/orange-neutral.8de707a01a852c256d48.png",
+    "static/media/orange-friendly.png": "./static/media/orange-friendly.f4fe94e67b8b8ddd73ef.png",
     "static/media/intro-interactable-4.jpg": "./static/media/intro-interactable-4.18e6b3e2c384ac8a36ec.jpg",
     "static/media/apple-question.png": "./static/media/apple-question.7584cb4aec683a16dc0f.png",
     "static/media/apple.png": "./static/media/apple.344d489755e1ef9d27a4.png",
@@ -10,12 +14,7 @@
     "static/media/apple-unfriendly.png": "./static/media/apple-unfriendly.786c68ec932dfdbeef95.png",
     "static/media/apple-neutral.png": "./static/media/apple-neutral.0b50a14ac3c761a8e039.png",
     "static/media/gala-intro-4.jpg": "./static/media/gala-intro-4.637d86895ee2b2828315.jpg",
-    "static/media/solution-5.jpg": "./static/media/solution-5.aac0e5e2dd75510b9cc6.jpg",
-    "static/media/solution-4.jpg": "./static/media/solution-4.9b41a18efb5a82042d84.jpg",
-    "static/media/solution-3.jpg": "./static/media/solution-3.98c5e1b1069a96c9e4fd.jpg",
     "static/media/gala-intro-3.jpg": "./static/media/gala-intro-3.e8ee949edf75b0091f0b.jpg",
-    "static/media/solution-2.jpg": "./static/media/solution-2.09f55ca08af1808c565d.jpg",
-    "static/media/solution-1.jpg": "./static/media/solution-1.cff1797e5b093e190a50.jpg",
     "static/media/intro-interactable-3.jpg": "./static/media/intro-interactable-3.e85f7bdc097e6586abd1.jpg",
     "static/media/intro-interactable-2.jpg": "./static/media/intro-interactable-2.3bdadfb91defe16d8d6e.jpg",
     "static/media/gala-intro-5.jpg": "./static/media/gala-intro-5.c4bc0fcd766f85c078e0.jpg",
@@ -33,11 +32,11 @@
     "static/media/unfriendly.png": "./static/media/unfriendly.1667965aa8937ec699b3.png",
     "static/media/gala-and-pears.jpg": "./static/media/gala-and-pears.64d017dc66c6873be620.jpg",
     "index.html": "./index.html",
-    "main.82ec8510.css.map": "./static/css/main.82ec8510.css.map",
-    "main.092a1c94.js.map": "./static/js/main.092a1c94.js.map"
+    "main.391ce810.css.map": "./static/css/main.391ce810.css.map",
+    "main.5a9d460d.js.map": "./static/js/main.5a9d460d.js.map"
   },
   "entrypoints": [
-    "static/css/main.82ec8510.css",
-    "static/js/main.092a1c94.js"
+    "static/css/main.391ce810.css",
+    "static/js/main.5a9d460d.js"
   ]
 }
