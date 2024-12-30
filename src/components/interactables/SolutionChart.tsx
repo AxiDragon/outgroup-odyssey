@@ -23,8 +23,6 @@ const SolutionChart = () => {
 	function getSplitData(): [FruitProps[], FruitProps[], FruitProps[]] {
 		const data: [FruitProps[], FruitProps[], FruitProps[]] = [[], [], []];
 
-		console.log(ingroupSize);
-
 		data[0] = fruits.slice(ingroupSize, fruits.length);
 		data[1] = fruits.slice(0, ingroupSize);
 
