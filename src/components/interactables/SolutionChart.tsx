@@ -2,24 +2,19 @@ import { useEffect, useRef, useState } from "react";
 import { FruitProps } from "./ChartFruit";
 import FruitChart from "./FruitChart";
 
-const batchCount = 20;
+const batchCount = 15;
 
 const SolutionChart = () => {
 	const initialFruits: FruitProps[] = [
 		...Array(batchCount).fill({ fruitType: "apple", }),
 		...Array(batchCount).fill({ fruitType: "pear", }),
-		...Array(batchCount).fill({ fruitType: "apple", }),
-		...Array(batchCount).fill({ fruitType: "apple", })
+		...Array(batchCount).fill({ fruitType: "cherry", }),
+		...Array(batchCount).fill({ fruitType: "orange", })
 	];
 
 	const shuffledFruits = initialFruits.sort(() => Math.random() - 0.5);
 
-	const fruitRef =
-		useRef<FruitProps[]>(shuffledFruits);
-
-	useEffect(() => {
-		fruitRef.current.sort(() => Math.random() - 0.5);
-	}, []);
+	const fruitRef = useRef<FruitProps[]>([...Array(batchCount).fill({ fruitType: "apple", }), ...shuffledFruits]);
 
 	const [ingroupPercentage, setIngroupPercentage] = useState(0);
 
@@ -73,7 +68,7 @@ const SolutionChart = () => {
 
 	return (
 		<div>
-			<FruitChart minLength={batchCount * 4} fruitData={getSplitData()} fruitHeight={20} type="in-outgroup" />
+			<FruitChart minLength={batchCount * 5} fruitData={getSplitData()} fruitHeight={20} type="in-outgroup" />
 			<div className="LabelledSliderContainer">
 				<div className="LabelledSlider">
 					<span>All Out-group</span>
