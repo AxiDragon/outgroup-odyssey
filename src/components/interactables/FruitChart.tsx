@@ -41,7 +41,9 @@ const FruitChart = ({ fruitData, minLength = 4, fruitHeight = 100, type = 'frien
 							// TODO: Fix that each column will match the height of the tallest column
 							>
 								{column.map((fruit, j) => (
-									<ChartFruit key={j} {...fruit} height={fruitHeight} />
+									type === 'in-outgroup' ?
+										<ChartFruit key={j} fruitType={fruit.fruitType} subType={i === 0 ? 'neutral' : 'friendly'} height={fruitHeight} />
+										: <ChartFruit key={j} {...fruit} height={fruitHeight} />
 								))}
 							</div>
 						))
