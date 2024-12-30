@@ -11,9 +11,12 @@ const SolutionSection = () => {
 				One thing that helps with that is simply being conscious about its existence.
 				Which, you should be, now that you've gone through this article. Go you!</p>
 			<p>Once you do realize that you're generalizing an outgroup, though - what do you do then?</p>
+			<p>Try moving the slider!</p>
 			<SolutionChart />
-			<p>...try to make the mental ingroup you're in, contain the outgroup too!<Footnote referenceId={5} /></p>
-			<p><i>I should put a better ending here. but I'm not sure what exactly. give me ideas please</i></p>
+			<p>Of course, what you have in common with another person depends on context.
+				But, by finding things that you have in common with a person from an outgroup, you are creating a new ingroup
+				which includes both you and the other person. It could be something as simple as having the same favorite color,
+				liking the same music, or having the same hairstyle!<Footnote referenceId={5} /></p>
 		</div>
 	);
 }

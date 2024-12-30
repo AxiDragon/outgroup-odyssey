@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { FruitProps } from "./ChartFruit";
 import FruitChart from "./FruitChart";
 
-const batchCount = 15;
+const batchCount = 30;
 
 const SolutionChart = () => {
 	const initialFruits: FruitProps[] = [
@@ -22,9 +22,11 @@ const SolutionChart = () => {
 		setIngroupPercentage(newValue);
 	}
 
+	const getIngroupSize = () => Math.ceil(fruitRef.current.length * (Math.pow(Math.max(0.01, ingroupPercentage), 2.5)));
+
 	function getSplitData(): [FruitProps[], FruitProps[], FruitProps[]] {
 		const data: [FruitProps[], FruitProps[], FruitProps[]] = [[], [], []];
-		const i = Math.floor(fruitRef.current.length * (Math.pow(ingroupPercentage, 2)));
+		const i = getIngroupSize();
 
 		data[0] = fruitRef.current.slice(i, fruitRef.current.length);
 		data[1] = fruitRef.current.slice(0, i);
@@ -32,43 +34,41 @@ const SolutionChart = () => {
 		return data;
 	}
 
-	function getIngroupSizeTerm(): string {
-		const ingroupSize = Math.floor(fruitRef.current.length * (Math.pow(ingroupPercentage, 2)));
+
+	function getIngroupCommonality(): string {
+		const ingroupSize = getIngroupSize();
 
 		if (ingroupSize === fruitRef.current.length) {
-			return "Everyone!";
+			return "stuck in a graph on a website!";
 		}
 		if (ingroupSize === 0) {
-			return "No one";
+			return "non-existent...";
 		}
 		if (ingroupSize === 1) {
-			return "You";
+			return "alone. Try moving the slider!";
 		}
-		if (ingroupSize < 5) {
-			return "Family";
+		if (ingroupSize < 6) {
+			return "family!";
 		}
-		if (ingroupSize < 10) {
-			return "Friends";
+		if (ingroupSize < 13) {
+			return "friends!";
 		}
-		if (ingroupSize < 20) {
-			return "Friends and family";
+		if (ingroupSize < 30) {
+			return "interested in the same hobby!";
 		}
-		if (ingroupSize < 40) {
-			return "Neighbors";
+		if (ingroupSize < 75) {
+			return "living in the same area!";
 		}
-		if (ingroupSize < 60) {
-			return "Neighborhood";
-		}
-		if (ingroupSize < 160) {
-			return "Town";
+		if (ingroupSize < 150) {
+			return "living in the same town!";
 		}
 
-		return "You and your community";
+		return "hackers. You shouldn't be able to see this!";
 	};
 
 	return (
 		<div>
-			<FruitChart minLength={batchCount * 5} fruitData={getSplitData()} fruitHeight={20} type="in-outgroup" />
+			<FruitChart minLength={batchCount * 5} fruitData={getSplitData()} fruitHeight={10} type="in-outgroup" />
 			<div className="LabelledSliderContainer">
 				<div className="LabelledSlider">
 					<span>All Out-group</span>
@@ -84,8 +84,9 @@ const SolutionChart = () => {
 					<span>All In-group</span>
 				</div>
 			</div>
-			<p><b>{getIngroupSizeTerm()}</b></p>
-		</div>
+			<p>Your current ingroup consists of <b>{getIngroupSize()}</b> {getIngroupSize() === 1 ? "person" : "people"}!</p>
+			<p>Something you could have in common is that you are all <b>{getIngroupCommonality()}</b></p >
+		</div >
 	);
 };
 
