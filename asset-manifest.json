@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.391ce810.css",
-    "main.js": "./static/js/main.c6bada70.js",
+    "main.css": "./static/css/main.1e49455a.css",
+    "main.js": "./static/js/main.e07e82ed.js",
     "static/media/cherry-neutral.png": "./static/media/cherry-neutral.509239e40f115c0c3837.png",
     "static/media/cherry-friendly.png": "./static/media/cherry-friendly.3df3e6682f536a828e35.png",
     "static/media/orange-neutral.png": "./static/media/orange-neutral.8de707a01a852c256d48.png",
@@ -9,8 +9,8 @@
     "static/media/apple-friendly.png": "./static/media/apple-friendly.79b1d4acbc936099e4e3.png",
     "static/media/apple-unfriendly.png": "./static/media/apple-unfriendly.786c68ec932dfdbeef95.png",
     "static/media/apple-neutral.png": "./static/media/apple-neutral.0b50a14ac3c761a8e039.png",
-    "static/media/intro1.jpg": "./static/media/intro1.9e5d5d5a608b1060f012.jpg",
-    "static/media/intro2.jpg": "./static/media/intro2.7065e3563b752e668e55.jpg",
+    "static/media/intro1.jpg": "./static/media/intro1.efbab98c7175aeda7ae8.jpg",
+    "static/media/intro2.jpg": "./static/media/intro2.021a23aa1a99967738b2.jpg",
     "static/media/gala-and-apples.jpg": "./static/media/gala-and-apples.78b226b0553ce9fc0fbc.jpg",
     "static/media/friendly.png": "./static/media/friendly.9c8b678475f7f53967cf.png",
     "static/media/pear-friendly.png": "./static/media/pear-friendly.c69a3c0285e40c8a07bd.png",
@@ -21,11 +21,11 @@
     "static/media/unfriendly.png": "./static/media/unfriendly.1667965aa8937ec699b3.png",
     "static/media/gala-and-pears.jpg": "./static/media/gala-and-pears.64d017dc66c6873be620.jpg",
     "index.html": "./index.html",
-    "main.391ce810.css.map": "./static/css/main.391ce810.css.map",
-    "main.c6bada70.js.map": "./static/js/main.c6bada70.js.map"
+    "main.1e49455a.css.map": "./static/css/main.1e49455a.css.map",
+    "main.e07e82ed.js.map": "./static/js/main.e07e82ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.391ce810.css",
-    "static/js/main.c6bada70.js"
+    "static/css/main.1e49455a.css",
+    "static/js/main.e07e82ed.js"
   ]
 }
