@@ -63,18 +63,22 @@ const ChartFruit = ({ fruitType, subType = 'question', height = 100 }: FruitProp
 	}
 
 	return (
-		fruitType === 'none' ?
-			<div className={styles.empty} style={{
-				height: height,
-			}} /> //for empty spaces in FruitCharts
-			:
-			<div className={styles.fruit} style={{
-				height: height,
-			}} >
-				<img src={getImageSrc()} alt={fruitType} style={{
-					height: height,
-				}} />
-			</div>
+		<div style={{ height: height, width: height }} >
+			{
+				fruitType === 'none' ?
+					<div className={styles.empty} style={{
+						height: height,
+					}} /> //for empty spaces in FruitCharts
+					:
+					<div className={styles.fruit} style={{
+						height: height,
+					}} >
+						<img src={getImageSrc()} alt={fruitType} style={{
+							height: height,
+						}} />
+					</div>
+			}
+		</div>
 	);
 }
 

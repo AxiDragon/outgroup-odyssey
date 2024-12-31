@@ -14,10 +14,11 @@ type Props = {
 
 //TODO: Grid?
 const FruitChart = ({ fruitData, minLength = 4, fruitHeight = 100, type = 'friendliness' }: Props) => {
-	const maxLength = Math.max(...fruitData.map(c => c.length), minLength);
+	const fruitDataCopy = fruitData.map(c => [...c]);
+	const maxLength = Math.max(...fruitDataCopy.map(c => c.length), minLength);
 
 	//fill in empty spaces with 'none' fruits, to ensure each column has the same length
-	fruitData.forEach(c => {
+	fruitDataCopy.forEach(c => {
 		while (c.length < maxLength) {
 			c.unshift({ fruitType: 'none' });
 		}
@@ -28,7 +29,7 @@ const FruitChart = ({ fruitData, minLength = 4, fruitHeight = 100, type = 'frien
 			<div className={styles.container}>
 				<div className={styles.fruitColumnContainer}>
 					{
-						fruitData.map((column, i) => (
+						fruitDataCopy.map((column, i) => (
 							(type !== 'in-outgroup' || i !== 2) &&
 							<div
 								key={i}

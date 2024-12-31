@@ -34,7 +34,6 @@ const SolutionChart = () => {
 		return data;
 	}
 
-
 	function getIngroupCommonality(): string {
 		const ingroupSize = getIngroupSize();
 

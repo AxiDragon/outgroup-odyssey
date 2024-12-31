@@ -1,5 +1,3 @@
-import ImageSlideShow from "@c/interactables/ImageSlideShow";
-
 import gala from "@a/placeholder/gala.jpg";
 import galaAndApples from "@a/placeholder/gala-and-apples.jpg";
 import galaAndPears from "@a/placeholder/gala-and-pears.jpg";
@@ -10,12 +8,9 @@ import galaIntro3 from "@a/placeholder/gala-intro-3.jpg";
 import galaIntro4 from "@a/placeholder/gala-intro-4.jpg";
 import galaIntro5 from "@a/placeholder/gala-intro-5.jpg";
 
-import interactable1 from "@a/placeholder/intro-interactable-1.jpg";
-import interactable2 from "@a/placeholder/intro-interactable-2.jpg";
-import interactable3 from "@a/placeholder/intro-interactable-3.jpg";
-import interactable4 from "@a/placeholder/intro-interactable-4.jpg";
 import Footnote from "../Footnote";
 import FruitChart from "../interactables/FruitChart";
+import ClickableFruitChart from "../interactables/ClickableFruitChart";
 
 const TopicSection = () => {
 	return (
@@ -59,8 +54,7 @@ const TopicSection = () => {
 				Thus, Gala believes (AKA biases) that friendliness of the pears (AKA outgroup)
 				is more similar (AKA homogenous) than that of the apples.</p>
 			<p>But, in reality, when we check the friendliness of all apples one by one...</p>
-
-			<ImageSlideShow images={[interactable1, interactable2, interactable3, interactable4]} />
+			<ClickableFruitChart />
 			<p>...we see that the pears are just as diverse in how friendly they are as the apples.</p>
 			<p>Even if it intuitively seems correct to lump everyone in an outgroup into the same category,
 				they're actually just as unique as an ingroup.</p>
