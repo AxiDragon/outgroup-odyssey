@@ -26,13 +26,13 @@ const ClickableFruitChart = ({ fruitHeight = 100 }: Props) => {
 	function onFruitClick(fruitProps: FruitProps) {
 		switch (fruitProps.subType) {
 			case 'friendly':
-				setFruitData([fruitData[0], fruitData[1], [...fruitData[2], fruitProps]]);
+				setFruitData([fruitData[0], fruitData[1], [fruitProps, ...fruitData[2]]]);
 				break;
 			case 'neutral':
-				setFruitData([fruitData[0], [...fruitData[1], fruitProps], fruitData[2]]);
+				setFruitData([fruitData[0], [fruitProps, ...fruitData[1]], fruitData[2]]);
 				break;
 			case 'unfriendly':
-				setFruitData([[...fruitData[0], fruitProps], fruitData[1], fruitData[2]]);
+				setFruitData([[fruitProps, ...fruitData[0]], fruitData[1], fruitData[2]]);
 				break;
 			default:
 				break;
