@@ -58,7 +58,7 @@ const ClickableFruitChart = ({ fruitHeight = 100 }: Props) => {
 					width: '100%',
 				}}>
 					{clickableFruitRef.current.map((fruit, index) => (
-						<ClickableChartFruit key={index} fruitProps={{ ...fruit, height: fruitHeight }} onClick={onFruitClick} />
+						<ClickableChartFruit key={index} fruitProps={{ ...fruit, height: fruitHeight / 2 }} onClick={onFruitClick} />
 					))}
 				</div>
 			</div>
