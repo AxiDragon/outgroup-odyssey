@@ -49,13 +49,13 @@ const SolutionChart = () => {
 		if (ingroupSize < 6) {
 			return "family!";
 		}
-		if (ingroupSize < 13) {
+		if (ingroupSize < 15) {
 			return "friends!";
 		}
-		if (ingroupSize < 30) {
+		if (ingroupSize < 35) {
 			return "interested in the same hobby!";
 		}
-		if (ingroupSize < 75) {
+		if (ingroupSize < 90) {
 			return "living in the same area!";
 		}
 		if (ingroupSize < 150) {
@@ -70,7 +70,6 @@ const SolutionChart = () => {
 			<FruitChart minLength={batchCount * 5} fruitData={getSplitData()} fruitHeight={10} type="in-outgroup" />
 			<div className="LabelledSliderContainer">
 				<div className="LabelledSlider">
-					<span>All Out-group</span>
 					<input
 						type="range"
 						min={0}
@@ -78,9 +77,8 @@ const SolutionChart = () => {
 						value={ingroupPercentage}
 						step={0.001}
 						onChange={(e) => onIngroupPercentageChange(parseFloat(e.target.value))}
-						style={{ width: '50%' }}
+						style={{ width: '100%' }}
 					/>
-					<span>All In-group</span>
 				</div>
 			</div>
 			<p>Your current ingroup consists of <b>{getIngroupSize()}</b> {getIngroupSize() === 1 ? "person" : "people"}!</p>

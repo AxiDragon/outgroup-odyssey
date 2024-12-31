@@ -62,8 +62,8 @@ const FruitChart = ({ fruitData, minLength = 4, fruitHeight = 100, type = 'frien
 					{
 						type === 'in-outgroup' &&
 						<>
-							<p style={{ fontSize: 20 }}>Out-group</p>
-							<p style={{ fontSize: 20 }}>In-group</p>
+							<p style={{ fontSize: 20 }}>Outgroup</p>
+							<p style={{ fontSize: 20 }}>Ingroup</p>
 						</>
 					}
 				</div>
