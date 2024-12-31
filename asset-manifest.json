@@ -1,42 +1,31 @@
 {
   "files": {
     "main.css": "./static/css/main.391ce810.css",
-    "main.js": "./static/js/main.5a9d460d.js",
-    "static/media/intro-interactable-1.jpg": "./static/media/intro-interactable-1.b0e61f78a5d86b4638f3.jpg",
+    "main.js": "./static/js/main.c6bada70.js",
     "static/media/cherry-neutral.png": "./static/media/cherry-neutral.509239e40f115c0c3837.png",
     "static/media/cherry-friendly.png": "./static/media/cherry-friendly.3df3e6682f536a828e35.png",
     "static/media/orange-neutral.png": "./static/media/orange-neutral.8de707a01a852c256d48.png",
     "static/media/orange-friendly.png": "./static/media/orange-friendly.f4fe94e67b8b8ddd73ef.png",
-    "static/media/intro-interactable-4.jpg": "./static/media/intro-interactable-4.18e6b3e2c384ac8a36ec.jpg",
-    "static/media/apple-question.png": "./static/media/apple-question.7584cb4aec683a16dc0f.png",
-    "static/media/apple.png": "./static/media/apple.344d489755e1ef9d27a4.png",
     "static/media/apple-friendly.png": "./static/media/apple-friendly.79b1d4acbc936099e4e3.png",
     "static/media/apple-unfriendly.png": "./static/media/apple-unfriendly.786c68ec932dfdbeef95.png",
     "static/media/apple-neutral.png": "./static/media/apple-neutral.0b50a14ac3c761a8e039.png",
-    "static/media/gala-intro-4.jpg": "./static/media/gala-intro-4.637d86895ee2b2828315.jpg",
-    "static/media/gala-intro-3.jpg": "./static/media/gala-intro-3.e8ee949edf75b0091f0b.jpg",
-    "static/media/intro-interactable-3.jpg": "./static/media/intro-interactable-3.e85f7bdc097e6586abd1.jpg",
-    "static/media/intro-interactable-2.jpg": "./static/media/intro-interactable-2.3bdadfb91defe16d8d6e.jpg",
-    "static/media/gala-intro-5.jpg": "./static/media/gala-intro-5.c4bc0fcd766f85c078e0.jpg",
+    "static/media/intro1.jpg": "./static/media/intro1.9e5d5d5a608b1060f012.jpg",
+    "static/media/intro2.jpg": "./static/media/intro2.7065e3563b752e668e55.jpg",
     "static/media/gala-and-apples.jpg": "./static/media/gala-and-apples.78b226b0553ce9fc0fbc.jpg",
     "static/media/friendly.png": "./static/media/friendly.9c8b678475f7f53967cf.png",
-    "static/media/pear-question.png": "./static/media/pear-question.4db7c2db327de81e5fe4.png",
     "static/media/pear-friendly.png": "./static/media/pear-friendly.c69a3c0285e40c8a07bd.png",
     "static/media/neutral.png": "./static/media/neutral.be2846068b182abbd8bd.png",
     "static/media/pear-neutral.png": "./static/media/pear-neutral.e5e165c8e16d4f6ab7d5.png",
     "static/media/pear-unfriendly.png": "./static/media/pear-unfriendly.95a44816d8cd6a0501aa.png",
-    "static/media/gala-intro-2.jpg": "./static/media/gala-intro-2.6481a0a74797c495ba88.jpg",
-    "static/media/gala-intro-1.jpg": "./static/media/gala-intro-1.4dbf0a698e4b71664041.jpg",
     "static/media/gala.jpg": "./static/media/gala.1b62a07a66487af47d1b.jpg",
-    "static/media/pear.png": "./static/media/pear.2563ca2b8ad00c8b4b9b.png",
     "static/media/unfriendly.png": "./static/media/unfriendly.1667965aa8937ec699b3.png",
     "static/media/gala-and-pears.jpg": "./static/media/gala-and-pears.64d017dc66c6873be620.jpg",
     "index.html": "./index.html",
     "main.391ce810.css.map": "./static/css/main.391ce810.css.map",
-    "main.5a9d460d.js.map": "./static/js/main.5a9d460d.js.map"
+    "main.c6bada70.js.map": "./static/js/main.c6bada70.js.map"
   },
   "entrypoints": [
     "static/css/main.391ce810.css",
-    "static/js/main.5a9d460d.js"
+    "static/js/main.c6bada70.js"
   ]
 }
