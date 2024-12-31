@@ -9,8 +9,10 @@ const TopicSection = () => {
 					the same of people requires less brain power.</li>
 				<li>Outgroup homogeneity bias can lead to people from outgroups
 					being perceived as less competent or friendly.</li>
-				<li>One way to combat outgroup homogeneity bias is to find commonalities with people from
-					outgroups, creating a new ingroup that includes both you and the other person.</li>
+				<li>When you find yourself falling into the trap of outgroup homogeneity
+					bias, find commonalities with the other person,
+					creating a new ingroup that includes both you and the other person.<br />
+					Rather than looking at what divides you, look at what unites you.</li>
 			</ul>
 		</div>
 	);
