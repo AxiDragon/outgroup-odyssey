@@ -9,8 +9,9 @@ const CauseSection = () => {
 				and therefore don't know people from outgroups as well.
 				However, this is disputed since outgroup homogeneity bias still occurs in groups that
 				frequently interact with each other, like men and women.<Footnote referenceId={2} /></p>
-			<p>Another reasons that has more consensus is that thinking that an outgroup consists of all the same sorts of people
-				is far easier on the brain. You don't have to remember as many things.<Footnote referenceId={3} /></p>
+			<p>Another reason that has more consensus is that it's far easier on the brain to
+				think that an outgroup consists	of all the same sorts of people.
+				You don't have to remember as many things.<Footnote referenceId={3} /></p>
 			<p>Try messing with the tool below!</p>
 			<MemoryGraphSlider />
 		</div>

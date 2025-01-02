@@ -24,7 +24,7 @@ const TopicSection = () => {
 			<p>And Gala knows many different other apples. And Gala knows they're an apple,
 				like other apples (one of Gala's so-called ingroups).</p>
 			<img src={galaAndApples} style={{ height: 250 }} />
-			<p>Gala also knows the existence of pears, but hasn't really interacted with them
+			<p>Gala also knows of the existence of pears, but hasn't really interacted with them
 				(again, the outgroup).</p>
 			<img src={galaAndPears} style={{ height: 150 }} />
 			<p>We then ask Gala to estimate what percentage of apples Gala believes are unfriendly, friendly, or

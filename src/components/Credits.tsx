@@ -3,7 +3,6 @@ import References from "./References";
 const Credits = () => {
 	return (
 		<div className="Credits">
-			<p>Thank you for playing this explorable explanation!</p>
 			<References sources={[
 				"Sapolsky, Robert M. (2017). Behave: The Biology of Humans at Our Best and Worst. Penguin Press.",
 				"Rubin, M., Hewstone, M., Crisp, R. J., Voci, A., & Richards, Z. (2004). Gender out-group homogeneity: The roles of differential familiarity, gender differences, and group size. In V. Yzerbyt, C. M. Judd, & O. Corneille (Eds.), The psychology of group perception: Perceived variability, entitativity, and essentialism (pp. 203-220). New York: Psychology Press.",
