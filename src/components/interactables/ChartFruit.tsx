@@ -1,20 +1,14 @@
 import styles from './ChartFruit.module.css';
 
-import appleFriendly from "@a/placeholder/apple-friendly.png";
-import appleNeutral from "@a/placeholder/apple-neutral.png";
-import appleUnfriendly from "@a/placeholder/apple-unfriendly.png";
+import appleFriendly from "@a/graph/apple-friendly.png";
+import appleNeutral from "@a/graph/apple-neutral.png";
+import appleUnfriendly from "@a/graph/apple-unfriendly.png";
 
-import pearFriendly from "@a/placeholder/pear-friendly.png";
-import pearNeutral from "@a/placeholder/pear-neutral.png";
-import pearUnfriendly from "@a/placeholder/pear-unfriendly.png";
+import pearFriendly from "@a/graph/pear-friendly.png";
+import pearNeutral from "@a/graph/pear-neutral.png";
+import pearUnfriendly from "@a/graph/pear-unfriendly.png";
 
-import cherryFriendly from "@a/placeholder/cherry-friendly.png";
-import cherryNeutral from "@a/placeholder/cherry-neutral.png";
-
-import orangeFriendly from "@a/placeholder/orange-friendly.png";
-import orangeNeutral from "@a/placeholder/orange-neutral.png";
-
-export type FruitType = 'apple' | 'pear' | 'cherry' | 'orange' | 'none';
+export type FruitType = 'apple' | 'pear' | 'orange' | 'none';
 export type SubType = 'friendly' | 'neutral' | 'unfriendly';
 
 export type FruitProps = {
@@ -40,18 +34,7 @@ const ChartFruit = ({ fruitType, subType = 'neutral', height = 100 }: FruitProps
 					case 'unfriendly': return pearUnfriendly;
 					default: return pearNeutral;
 				}
-			case 'cherry':
-				switch (subType) {
-					case 'friendly': return cherryFriendly;
-					case 'neutral': return cherryNeutral;
-					default: return cherryNeutral;
-				}
 			case 'orange':
-				switch (subType) {
-					case 'friendly': return orangeFriendly;
-					case 'neutral': return orangeNeutral;
-					default: return orangeNeutral;
-				}
 			default: return appleNeutral;
 		}
 	}

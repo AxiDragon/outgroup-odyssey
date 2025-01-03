@@ -1,9 +1,9 @@
 import ChartFruit, { FruitProps } from "./ChartFruit";
 import styles from './FruitChart.module.css';
 
-import friendly from "@a/placeholder/friendly.png";
-import neutral from "@a/placeholder/neutral.png";
-import unfriendly from "@a/placeholder/unfriendly.png";
+import friendly from "@a/graph/friendly.png";
+import neutral from "@a/graph/neutral.png";
+import unfriendly from "@a/graph/unfriendly.png";
 
 type Props = {
 	fruitData: [FruitProps[], FruitProps[], FruitProps[]];
