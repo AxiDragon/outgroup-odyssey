@@ -1,6 +1,8 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.5;
+	margin: 0;
+	overflow-x: hidden;
 }
 
 img {
@@ -16,17 +18,13 @@ h2 {
 
 .App {
 	text-align: center;
-	width: 50%;
+	margin: 0;
 }
 
 .AppContainer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
-}
-
-.MemoryGraphSlider {
 	width: 100%;
 }
 
@@ -61,6 +59,25 @@ h2 {
 	margin-top: 100px;
 }
 
-.ImageSlideShow {
+.PlayableContainer,
+.Section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 100%;
+}
+
+.PlayableContainer {
+	background-color: lemonchiffon;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.Playable,
+.SectionText {
+	text-align: center;
+	width: 50%;
 }

@@ -34,30 +34,32 @@ const BiasFruitChart = () => {
 	}
 
 	return (
-		<div>
-			<FruitChart minLength={batchCount * 4} fruitData={getBiasedFruitData()} fruitHeight={20} />
-			<div className="LabelledSliderContainer">
-				<div className="LabelledSlider">
-					<span>No Bias</span>
-					<input
-						type="range"
-						min={0.0}
-						max={1.0}
-						value={bias}
-						step={0.001}
-						onChange={(e) => onBiasChange(parseFloat(e.target.value))}
-						style={{ width: '70%' }}
-					/>
-					<span>Full Bias</span>
+		<div className="PlayableContainer">
+			<div className="Playable">
+				<FruitChart minLength={batchCount * 4} fruitData={getBiasedFruitData()} fruitHeight={20} />
+				<div className="LabelledSliderContainer">
+					<div className="LabelledSlider">
+						<span>No Bias</span>
+						<input
+							type="range"
+							min={0.0}
+							max={1.0}
+							value={bias}
+							step={0.001}
+							onChange={(e) => onBiasChange(parseFloat(e.target.value))}
+							style={{ width: '70%' }}
+						/>
+						<span>Full Bias</span>
+					</div>
 				</div>
+				<p>In this example, there are a total of {batchCount * 6} candidates. With your current level of
+					bias, {batchCount} apples are perceived as friendly,
+					whilst <b>{batchCount - Math.floor(batchCount * bias)}</b> pears are perceived as friendly.
+					If a candidate from the 'Friendly' category was chosen, there would currently be
+					a <b>{Math.round(1 / (2 - bias) * 100)}%</b> chance that it is an apple,
+					and a <b>{Math.round((1 - 1 / (2 - bias)) * 100)}%</b> chance that it is a pear.
+				</p>
 			</div>
-			<p>In this example, there are a total of {batchCount * 6} candidates. With your current level of
-				bias, {batchCount} apples are perceived as friendly,
-				whilst <b>{batchCount - Math.floor(batchCount * bias)}</b> pears are perceived as friendly.
-				If a candidate from the 'Friendly' category was chosen, there would currently be
-				a <b>{Math.round(1 / (2 - bias) * 100)}%</b> chance that it is an apple,
-				and a <b>{Math.round((1 - 1 / (2 - bias)) * 100)}%</b> chance that it is a pear.
-			</p>
 		</div>
 	);
 };

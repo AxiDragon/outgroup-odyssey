@@ -40,29 +40,31 @@ const ClickableFruitChart = ({ fruitHeight = 100 }: Props) => {
 	}
 
 	return (
-		<div>
-			<h3>Click on the fruits to sort them!</h3>
-			<div style={{
-				display: 'flex',
-				justifyContent: 'center',
-				alignContent: 'center',
-				marginTop: 20,
-				width: '100%',
-			}}>
+		<div className="PlayableContainer">
+			<div className="Playable">
+				<h3>Click on the fruits to sort them!</h3>
 				<div style={{
 					display: 'flex',
-					gap: 20,
 					justifyContent: 'center',
 					alignContent: 'center',
-					marginBottom: 20,
+					marginTop: 20,
 					width: '100%',
 				}}>
-					{clickableFruitRef.current.map((fruit, index) => (
-						<ClickableChartFruit key={index} fruitProps={{ ...fruit, height: fruitHeight / 2 }} onClick={onFruitClick} />
-					))}
+					<div style={{
+						display: 'flex',
+						gap: 20,
+						justifyContent: 'center',
+						alignContent: 'center',
+						marginBottom: 20,
+						width: '100%',
+					}}>
+						{clickableFruitRef.current.map((fruit, index) => (
+							<ClickableChartFruit key={index} fruitProps={{ ...fruit, height: fruitHeight / 2 }} onClick={onFruitClick} />
+						))}
+					</div>
 				</div>
+				<FruitChart fruitData={fruitData} minLength={baseFruits.length / 3} fruitHeight={fruitHeight} />
 			</div>
-			<FruitChart fruitData={fruitData} minLength={baseFruits.length / 3} fruitHeight={fruitHeight} />
 		</div>
 	);
 }

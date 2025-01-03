@@ -66,24 +66,26 @@ const SolutionChart = () => {
 	};
 
 	return (
-		<div>
-			<FruitChart minLength={batchCount * 5} fruitData={getSplitData()} fruitHeight={10} type="in-outgroup" />
-			<div className="LabelledSliderContainer">
-				<div className="LabelledSlider">
-					<input
-						type="range"
-						min={0}
-						max={1}
-						value={ingroupPercentage}
-						step={0.001}
-						onChange={(e) => onIngroupPercentageChange(parseFloat(e.target.value))}
-						style={{ width: '100%' }}
-					/>
+		<div className="PlayableContainer">
+			<div className="Playable">
+				<FruitChart minLength={batchCount * 5} fruitData={getSplitData()} fruitHeight={10} type="in-outgroup" />
+				<div className="LabelledSliderContainer">
+					<div className="LabelledSlider">
+						<input
+							type="range"
+							min={0}
+							max={1}
+							value={ingroupPercentage}
+							step={0.001}
+							onChange={(e) => onIngroupPercentageChange(parseFloat(e.target.value))}
+							style={{ width: '100%' }}
+						/>
+					</div>
 				</div>
+				<p>Your current ingroup consists of <b>{getIngroupSize()}</b> {getIngroupSize() === 1 ? "person" : "people"}!</p>
+				<p>Something you could have in common is that you are all <b>{getIngroupCommonality()}</b></p >
 			</div>
-			<p>Your current ingroup consists of <b>{getIngroupSize()}</b> {getIngroupSize() === 1 ? "person" : "people"}!</p>
-			<p>Something you could have in common is that you are all <b>{getIngroupCommonality()}</b></p >
-		</div >
+		</div>
 	);
 };
 
