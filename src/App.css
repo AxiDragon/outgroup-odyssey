@@ -28,6 +28,7 @@ h1 {
 	background-color: var(--grey);
 	font-family: 'Anaheim', sans-serif;
 	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 .App {
@@ -83,7 +84,7 @@ h1 {
 .PlayableContainer {
 	background-color: #FFF2F1;
 	color: var(--off-black);
-	box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 4px var(--grey);
 	padding-top: 35px;
 	padding-bottom: 35px;
 	margin-top: 35px;
