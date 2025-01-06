@@ -1,9 +1,9 @@
-import gala from "@a/placeholder/gala.jpg";
-import galaAndApples from "@a/placeholder/gala-and-apples.jpg";
-import galaAndPears from "@a/placeholder/gala-and-pears.jpg";
+import gala from "@a/intro/gala.png";
+import galaAndApples from "@a/intro/apples.png";
+import galaAndPears from "@a/intro/pears.png";
 
-import intro1 from "@a/placeholder/intro1.jpg";
-import intro2 from "@a/placeholder/intro2.jpg";
+import judgeApples from "@a/intro/judge-apples.png";
+import judgePears from "@a/intro/judge-pears.png";
 
 import Footnote from "../Footnote";
 import FruitChart from "../interactables/FruitChart";
@@ -24,13 +24,13 @@ const TopicSection = () => {
 				<img src={gala} style={{ height: 150 }} />
 				<p>And Gala knows many different other apples. And Gala knows they're an apple,
 					like other apples (one of Gala's so-called ingroups).</p>
-				<img src={galaAndApples} style={{ height: 250 }} />
+				<img src={galaAndApples} style={{ height: 150 }} />
 				<p>Gala also knows of the existence of pears, but hasn't really interacted with them
 					(again, the outgroup).</p>
 				<img src={galaAndPears} style={{ height: 150 }} />
 				<p>We then ask Gala to estimate what percentage of apples Gala believes are unfriendly, friendly, or
 					somewhere inbetween.</p>
-				<img src={intro1} style={{ height: 250 }} />
+				<img src={judgeApples} style={{ height: 175 }} />
 				<FruitChart fruitData={
 					[
 						[{ fruitType: "apple", subType: "unfriendly" }, { fruitType: "apple", subType: "unfriendly" }],
@@ -41,7 +41,7 @@ const TopicSection = () => {
 				<p>When we look at the distribution of friendliness among the apples, we see that Gala believes
 					that the apples are quite diverse in how friendly they are.</p>
 				<p>However, when we ask Gala to do the same for the pears...</p>
-				<img src={intro2} style={{ height: 250 }} />
+				<img src={judgePears} style={{ height: 175 }} />
 				<FruitChart fruitData={
 					[
 						[{ fruitType: "pear", subType: "unfriendly" }],
