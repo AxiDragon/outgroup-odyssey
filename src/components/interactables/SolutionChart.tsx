@@ -68,6 +68,8 @@ const SolutionChart = () => {
 	return (
 		<div className="PlayableContainer">
 			<div className="Playable">
+				<p>Your current ingroup consists of <b>{getIngroupSize()}</b> {getIngroupSize() === 1 ? "person" : "people"}!</p>
+				<p>Something you could have in common is that you are all <b>{getIngroupCommonality()}</b></p >
 				<FruitChart minLength={batchCount * 5} fruitData={getSplitData()} fruitHeight={10} type="in-outgroup" />
 				<div className="LabelledSliderContainer">
 					<div className="LabelledSlider">
@@ -82,8 +84,6 @@ const SolutionChart = () => {
 						/>
 					</div>
 				</div>
-				<p>Your current ingroup consists of <b>{getIngroupSize()}</b> {getIngroupSize() === 1 ? "person" : "people"}!</p>
-				<p>Something you could have in common is that you are all <b>{getIngroupCommonality()}</b></p >
 			</div>
 		</div>
 	);

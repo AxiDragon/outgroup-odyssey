@@ -15,7 +15,7 @@ const TopicSection = () => {
 			<div className="SectionText">
 				<h2>OUTGROUP HOMOGENEITY BIAS? WHAT'S THAT?</h2>
 				<p>Outgroup homogeneity bias refers to the tendency to underestimate
-					the differences among members of a group to which we do not belong (the so-called outgroup).
+					the differences among members of a group that we're not a part of (the so-called outgroup).
 					<Footnote referenceId={1} /> </p>
 				<p>For example, we have apples and pears. If it helps, imagine that the apples are your group of friends,
 					whilst the pears are... accountants. Or construction workers. Or professional athletes.
