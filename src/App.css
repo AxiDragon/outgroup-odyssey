@@ -1,5 +1,10 @@
+:root {
+	--off-black: #1d211c;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
+	color: var(--off-black);
 	line-height: 1.5;
 	margin: 0;
 	overflow-x: hidden;
@@ -45,9 +50,7 @@ h2 {
 }
 
 .TitleCard {
-	background-color: #fff;
 	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	padding: 20px;
 	margin-bottom: 50px;
 	width: 100%;
@@ -69,11 +72,12 @@ h2 {
 
 .PlayableContainer {
 	background-color: lemonchiffon;
-	border-top: 3px solid #000;
-	border-bottom: 3px solid #000;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	color: var(--off-black);
+	box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
 	padding-top: 35px;
 	padding-bottom: 35px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 }
 
 .Playable,
