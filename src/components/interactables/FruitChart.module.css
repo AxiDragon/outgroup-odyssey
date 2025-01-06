@@ -41,7 +41,8 @@
 	align-items: center;
 	justify-content: space-around;
 	padding-top: 25px;
-	border-top: 5px solid black;
+	border-top: 5px solid var(--off-black);
+	border-radius: 10px;
 	text-align: center;
 }
 

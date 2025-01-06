@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FruitProps } from "./ChartFruit";
 import FruitChart from "./FruitChart";
+import LabelledSlider from "./LabelledSlider";
 
 const batchCount = 20;
 
@@ -44,21 +45,7 @@ const BiasFruitChart = () => {
 					and a <b>{Math.round((1 - 1 / (2 - bias)) * 100)}%</b> chance that it is a pear.
 				</p>
 				<FruitChart minLength={batchCount * 4} fruitData={getBiasedFruitData()} fruitHeight={20} />
-				<div className="LabelledSliderContainer">
-					<div className="LabelledSlider">
-						<span>No Bias</span>
-						<input
-							type="range"
-							min={0.0}
-							max={1.0}
-							value={bias}
-							step={0.001}
-							onChange={(e) => onBiasChange(parseFloat(e.target.value))}
-							style={{ width: '70%' }}
-						/>
-						<span>Full Bias</span>
-					</div>
-				</div>
+				<LabelledSlider type="bias" onChange={onBiasChange} value={bias} />
 			</div>
 		</div>
 	);

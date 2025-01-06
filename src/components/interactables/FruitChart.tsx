@@ -35,8 +35,10 @@ const FruitChart = ({ fruitData, minLength = 4, fruitHeight = 100, type = 'frien
 								key={i}
 								className={styles.fruitColumn}
 								style={{
-									borderRight: i === 1 && type === 'friendliness' ? '5px solid black' : 'none',
-									borderLeft: i === 1 ? '5px solid black' : 'none',
+									borderRight: i === 1 && type === 'friendliness' ? '5px solid var(--off-black)' : 'none',
+									borderLeft: i === 1 ? '5px solid var(--off-black)' : 'none',
+									borderTopLeftRadius: 5,
+									borderTopRightRadius: 5,
 									gridTemplateColumns: `repeat(${Math.ceil(100 / fruitHeight)}, 1fr)`,
 								}}
 							// TODO: Fix that each column will match the height of the tallest column

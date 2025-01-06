@@ -2,6 +2,8 @@
 import { Chart, CategoryScale, LinearScale, Title, Tooltip, Legend, PointElement, LineElement, Filler } from "chart.js";
 import { useState } from "react";
 import { Line } from "react-chartjs-2";
+import LabelledSlider from "./LabelledSlider";
+import getColor, { getColorWithTransparency } from "@/utility/getBiasColor";
 
 Chart.register(CategoryScale, LinearScale, LineElement, PointElement, Title, Tooltip, Legend, Filler);
 
@@ -27,8 +29,8 @@ const MemoryGraphSlider = () => {
 			{
 				data: yPoints,
 				fill: true,
-				backgroundColor: `rgba(${(1 - bias) * 255},0,${bias * 255},0.2)`,
-				borderColor: `rgb(${(1 - bias) * 255},0,${bias * 255})`,
+				backgroundColor: getColorWithTransparency(bias, 0.2),
+				borderColor: getColor(bias),
 				borderWidth: 3,
 				tension: 0.1,
 			},
@@ -64,7 +66,7 @@ const MemoryGraphSlider = () => {
 				},
 				title: {
 					display: true,
-					color: 'black',
+					color: 'var(--off-black)',
 					text: "Group Size",
 					font: {
 						size: 16,
@@ -72,7 +74,7 @@ const MemoryGraphSlider = () => {
 					},
 				},
 				border: {
-					color: 'black',
+					color: 'var(--off-black)',
 					width: 5,
 				}
 			},
@@ -87,7 +89,7 @@ const MemoryGraphSlider = () => {
 				},
 				title: {
 					display: true,
-					color: 'black',
+					color: 'var(--off-black)',
 					text: "Traits to Remember",
 					font: {
 						size: 16,
@@ -95,7 +97,7 @@ const MemoryGraphSlider = () => {
 					},
 				},
 				border: {
-					color: 'black',
+					color: 'var(--off-black)',
 					width: 5,
 				}
 			},
@@ -111,21 +113,7 @@ const MemoryGraphSlider = () => {
 				<p>Simply grouping everyone together as having 5 traits would
 					be <b>{(Math.ceil((1 - bias) * 49 * 5 + 5) / 5).toFixed(1)}x</b> less information that you'd need to remember.</p>
 				<Line data={data} options={options} />
-				<div className="LabelledSliderContainer">
-					<div className="LabelledSlider">
-						<span>No Bias</span>
-						<input
-							type="range"
-							min={0.0}
-							max={1.0}
-							value={bias}
-							step={0.001}
-							onChange={(e) => onBiasChange(parseFloat(e.target.value))}
-							style={{ width: '70%' }}
-						/>
-						<span>Full Bias</span>
-					</div>
-				</div>
+				<LabelledSlider type="bias" onChange={onBiasChange} value={bias} />
 			</div>
 		</div>);
 };

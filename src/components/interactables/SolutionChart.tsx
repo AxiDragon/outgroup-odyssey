@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { FruitProps } from "./ChartFruit";
 import FruitChart from "./FruitChart";
+import LabelledSlider from "./LabelledSlider";
 
 const batchCount = 30;
 
@@ -71,19 +72,7 @@ const SolutionChart = () => {
 				<p>Your current ingroup consists of <b>{getIngroupSize()}</b> {getIngroupSize() === 1 ? "person" : "people"}!</p>
 				<p>Something you could have in common is that you are all <b>{getIngroupCommonality()}</b></p >
 				<FruitChart minLength={batchCount * 5} fruitData={getSplitData()} fruitHeight={10} type="in-outgroup" />
-				<div className="LabelledSliderContainer">
-					<div className="LabelledSlider">
-						<input
-							type="range"
-							min={0}
-							max={1}
-							value={ingroupPercentage}
-							step={0.001}
-							onChange={(e) => onIngroupPercentageChange(parseFloat(e.target.value))}
-							style={{ width: '100%' }}
-						/>
-					</div>
-				</div>
+				<LabelledSlider type="in-outgroup" onChange={onIngroupPercentageChange} value={ingroupPercentage} />
 			</div>
 		</div>
 	);
