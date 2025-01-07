@@ -21,12 +21,14 @@ img {
 
 h2,
 h1 {
-	margin-top: 150px;
+	width: 100%;
+	margin-top: 75px;
 	padding: 25px;
 	background-color: var(--grey);
 	font-family: 'Anaheim', sans-serif;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	box-sizing: border-box;
 }
 
 .App {
@@ -41,11 +43,8 @@ h1 {
 }
 
 .TitleCard {
-	border-radius: 5px;
-	padding: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	width: 100%;
-	box-sizing: border-box;
 }
 
 .Credits {
@@ -75,4 +74,6 @@ h1 {
 .SectionText {
 	text-align: center;
 	width: 100%;
+	box-sizing: border-box;
+	padding: 25px;
 }

@@ -1,8 +1,8 @@
 const TopicSection = () => {
 	return (
 		<div className="Section">
+			<h2>TO SUMMARIZE</h2>
 			<div className="SectionText">
-				<h2>TO SUMMARIZE</h2>
 				<ul>
 					<li>Outgroup homogeneity bias refers to the tendency to underestimate
 						the differences among members of a group to which we do not belong.</li>

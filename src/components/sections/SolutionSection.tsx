@@ -4,8 +4,8 @@ import SolutionChart from "../interactables/SolutionChart";
 const SolutionSection = () => {
 	return (
 		<div className="Section">
+			<h2>HOW DO WE STOP OUTGROUP HOMOGENEITY BIAS?</h2>
 			<div className="SectionText">
-				<h2>HOW DO WE STOP OUTGROUP HOMOGENEITY BIAS?</h2>
 				<p>In reality, it is a bit hard to fix - it is a bias after all.
 					And that means you're not really aware of when you're falling in its trap.</p>
 				<p>That does mean that it'll help if you can realize when you're falling into that trap.

@@ -4,8 +4,8 @@ import BiasFruitChart from "../interactables/BiasFruitChart";
 const EffectSection = () => {
 	return (
 		<div className="Section">
+			<h2>OKAY, NOW WHAT'S THE BAD PART?</h2>
 			<div className="SectionText">
-				<h2>OKAY, THAT'S GOOD. WHAT'S THE BAD PART?</h2>
 				<p>It's true that your brain uses the bias to conserve memory space.
 					But, by doing this, it also generalizes people from outgroups.
 					A person from an outgroup becomes 'just another one of those'.</p>

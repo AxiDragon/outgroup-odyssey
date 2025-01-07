@@ -12,8 +12,8 @@ import ClickableFruitChart from "../interactables/ClickableFruitChart";
 const TopicSection = () => {
 	return (
 		<div className="Section">
+			<h2>OUTGROUP HOMOGENEITY BIAS? WHAT'S THAT?</h2>
 			<div className="SectionText">
-				<h2>OUTGROUP HOMOGENEITY BIAS? WHAT'S THAT?</h2>
 				<p>Outgroup homogeneity bias refers to the tendency to underestimate
 					the differences among members of a group that we're not a part of (the so-called outgroup).
 					<Footnote referenceId={1} /> </p>

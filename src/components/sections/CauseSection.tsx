@@ -4,8 +4,8 @@ import Footnote from "../Footnote";
 const CauseSection = () => {
 	return (
 		<div className="Section">
+			<h2>RIGHT, THAT MAKES SENSE. BUT WHY?</h2>
 			<div className="SectionText">
-				<h2>RIGHT, THAT MAKES SENSE. BUT WHY?</h2>
 				<p>One might think that outgroup homogeneity bias exists simply because we don't interact much with outgroups,
 					and therefore don't know people from outgroups as well.
 					However, it is unsure if this is the main cause of the bias, as it still occurs in groups that
