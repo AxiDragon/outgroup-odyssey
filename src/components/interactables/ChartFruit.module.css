@@ -1,19 +1,5 @@
-.fruit {
-	height: 100px;
-}
-
-.fruit img {
-	height: 100px;
-}
-
-.apple {
-	background-color: tomato;
-}
-
-.pear {
-	background-color: greenyellow;
-}
-
+.fruit img,
+.fruit,
 .empty {
-	height: 100px;
+	max-width: 100px;
 }

@@ -106,7 +106,7 @@ const MemoryGraphSlider = () => {
 
 	return (
 		<div className="PlayableContainer">
-			<div className="Playable">
+			<div className="Playable" style={{ maxWidth: 750, padding: 20 }}>
 				<p>For example, if there was a group of 50 people,
 					and you wanted to remember 5 traits per person,
 					you would, with your current level of bias, want to remember <b>{Math.ceil((1 - bias) * 49 * 5 + 5)}</b> traits.</p>
