@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "./static/css/main.8b81e62a.css",
-    "main.js": "./static/js/main.25d0912d.js",
-    "static/media/intro1.jpg": "./static/media/intro1.efbab98c7175aeda7ae8.jpg",
-    "static/media/intro2.jpg": "./static/media/intro2.021a23aa1a99967738b2.jpg",
-    "static/media/gala-and-apples.jpg": "./static/media/gala-and-apples.78b226b0553ce9fc0fbc.jpg",
+    "main.css": "./static/css/main.c49fa44e.css",
+    "main.js": "./static/js/main.f6ceb3d1.js",
+    "static/media/pears.png": "./static/media/pears.62f9033eeaa2ea52787f.png",
+    "static/media/apples.png": "./static/media/apples.81c1f1df9ec7074610c6.png",
+    "static/media/judge-apples.png": "./static/media/judge-apples.ac77cc8a5c3cd9f810b2.png",
+    "static/media/judge-pears.png": "./static/media/judge-pears.2b907e26fcb63616aa52.png",
     "static/media/friendly.png": "./static/media/friendly.f25940c8c63abc9517be.png",
     "static/media/pear-friendly.png": "./static/media/pear-friendly.c46225545cdcfe7d35d8.png",
     "static/media/neutral.png": "./static/media/neutral.6befbdaf45c96d4d8235.png",
@@ -14,14 +15,13 @@
     "static/media/apple-friendly.png": "./static/media/apple-friendly.0248ed63178e200e86fd.png",
     "static/media/apple-neutral.png": "./static/media/apple-neutral.5f96b06b375ddb3c6d81.png",
     "static/media/apple-unfriendly.png": "./static/media/apple-unfriendly.281b3170515b8d18b21b.png",
-    "static/media/gala.jpg": "./static/media/gala.1b62a07a66487af47d1b.jpg",
-    "static/media/gala-and-pears.jpg": "./static/media/gala-and-pears.64d017dc66c6873be620.jpg",
+    "static/media/gala.png": "./static/media/gala.55aa3f3e429bd19c6f15.png",
     "index.html": "./index.html",
-    "main.8b81e62a.css.map": "./static/css/main.8b81e62a.css.map",
-    "main.25d0912d.js.map": "./static/js/main.25d0912d.js.map"
+    "main.c49fa44e.css.map": "./static/css/main.c49fa44e.css.map",
+    "main.f6ceb3d1.js.map": "./static/js/main.f6ceb3d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b81e62a.css",
-    "static/js/main.25d0912d.js"
+    "static/css/main.c49fa44e.css",
+    "static/js/main.f6ceb3d1.js"
   ]
 }
