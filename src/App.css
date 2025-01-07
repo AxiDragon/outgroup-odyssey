@@ -16,8 +16,6 @@ body {
 
 img {
 	max-width: 100%;
-	max-height: 400px;
-	height: 50%;
 	object-fit: contain;
 }
 
@@ -35,9 +33,6 @@ h1 {
 	text-align: center;
 	font-family: 'Commissioner', sans-serif;
 	margin: 0;
-}
-
-.AppContainer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -78,5 +73,5 @@ h1 {
 .Playable,
 .SectionText {
 	text-align: center;
-	width: 50%;
+	width: 100%;
 }

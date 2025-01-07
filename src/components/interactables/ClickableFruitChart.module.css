@@ -1,0 +1,14 @@
+.clickableFruitGridContainer {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 20;
+	width: 100%;
+}
+
+.clickableFruitGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	gap: 10px;
+	max-width: 100%;
+}

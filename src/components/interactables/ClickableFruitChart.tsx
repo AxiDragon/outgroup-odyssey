@@ -3,6 +3,8 @@ import { FruitProps } from "./ChartFruit";
 import FruitChart from "./FruitChart";
 import ClickableChartFruit from "./ClickableChartFruit";
 
+import styles from "./ClickableFruitChart.module.css";
+
 type Props = {
 	fruitHeight?: number;
 };
@@ -43,21 +45,8 @@ const ClickableFruitChart = ({ fruitHeight = 100 }: Props) => {
 		<div className="PlayableContainer">
 			<div className="Playable">
 				<h3>Click on the fruits to sort them!</h3>
-				<div style={{
-					display: 'flex',
-					justifyContent: 'center',
-					alignContent: 'center',
-					marginTop: 20,
-					width: '100%',
-				}}>
-					<div style={{
-						display: 'flex',
-						gap: 20,
-						justifyContent: 'center',
-						alignContent: 'center',
-						marginBottom: 20,
-						width: '100%',
-					}}>
+				<div className={styles.clickableFruitGridContainer}>
+					<div className={styles.clickableFruitGrid}>
 						{clickableFruitRef.current.map((fruit, index) => (
 							<ClickableChartFruit key={index} fruitProps={{ ...fruit, height: fruitHeight / 2 }} onClick={onFruitClick} />
 						))}
