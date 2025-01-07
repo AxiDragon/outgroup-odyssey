@@ -44,7 +44,7 @@ const BiasFruitChart = () => {
 					a <b>{Math.round(1 / (2 - bias) * 100)}%</b> chance that it is an apple,
 					and a <b>{Math.round((1 - 1 / (2 - bias)) * 100)}%</b> chance that it is a pear.
 				</p>
-				<FruitChart minLength={batchCount * 4} fruitData={getBiasedFruitData()} fruitHeight={20} />
+				<FruitChart maxFruitsPerColumn={batchCount * 4} fruitData={getBiasedFruitData()} fruitHeight={20} />
 				<LabelledSlider type="bias" onChange={onBiasChange} value={bias} />
 			</div>
 		</div>

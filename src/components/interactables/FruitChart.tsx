@@ -7,19 +7,19 @@ import unfriendly from "@a/graph/unfriendly.png";
 
 type Props = {
 	fruitData: [FruitProps[], FruitProps[], FruitProps[]];
-	minLength?: number;
+	maxFruitsPerColumn?: number;
 	fruitHeight?: number;
 	type?: 'friendliness' | 'in-outgroup';
 };
 
-//TODO: Grid?
-const FruitChart = ({ fruitData, minLength = 4, fruitHeight = 100, type = 'friendliness' }: Props) => {
+const FruitChart = ({ fruitData, maxFruitsPerColumn = 4, fruitHeight = 100, type = 'friendliness' }: Props) => {
 	const fruitDataCopy = fruitData.map(c => [...c]);
-	const maxLength = Math.max(...fruitDataCopy.map(c => c.length), minLength);
+
+	//TODO: fix the flexbox issue with the graph not being a matrix
 
 	//fill in empty spaces with 'none' fruits, to ensure each column has the same length
 	fruitDataCopy.forEach(c => {
-		while (c.length < maxLength) {
+		while (c.length < maxFruitsPerColumn) {
 			c.unshift({ fruitType: 'none' });
 		}
 	})
@@ -41,7 +41,6 @@ const FruitChart = ({ fruitData, minLength = 4, fruitHeight = 100, type = 'frien
 									borderTopRightRadius: 5,
 									gridTemplateColumns: `repeat(${Math.ceil(100 / fruitHeight)}, 1fr)`,
 								}}
-							// TODO: Fix that each column will match the height of the tallest column
 							>
 								{column.map((fruit, j) => (
 									type === 'in-outgroup' ?

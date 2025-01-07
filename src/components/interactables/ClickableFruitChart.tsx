@@ -52,7 +52,7 @@ const ClickableFruitChart = ({ fruitHeight = 100 }: Props) => {
 						))}
 					</div>
 				</div>
-				<FruitChart fruitData={fruitData} minLength={baseFruits.length / 3} fruitHeight={fruitHeight} />
+				<FruitChart fruitData={fruitData} maxFruitsPerColumn={baseFruits.length / 3} fruitHeight={fruitHeight} />
 			</div>
 		</div>
 	);
