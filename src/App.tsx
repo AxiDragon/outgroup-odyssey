@@ -10,16 +10,14 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="AppContainer">
-      <div className="App">
-        <TitleCard />
-        <TopicSection />
-        <CauseSection />
-        <EffectSection />
-        <SolutionSection />
-        <SummarySection />
-        <Credits />
-      </div>
+    <div className="App">
+      <TitleCard />
+      <TopicSection />
+      <CauseSection />
+      <EffectSection />
+      <SolutionSection />
+      <SummarySection />
+      <Credits />
     </div>
   );
 }
