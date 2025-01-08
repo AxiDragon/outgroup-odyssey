@@ -1,3 +1,5 @@
+import FormLink from "../FormLink";
+
 const SummarySection = () => {
 	return (
 		<div className="Section">
@@ -13,7 +15,7 @@ const SummarySection = () => {
 					<li>When you find yourself falling into the trap of outgroup homogeneity
 						bias, find commonalities with the other person,
 						creating a new ingroup that includes both you and the other person.<br />
-						Rather than looking at what divides you, look at what unites you.</li>
+						<b>Rather than looking at what divides us, look at what unites us.</b></li>
 				</ul>
 				<br />
 				<p style={{
@@ -23,6 +25,7 @@ const SummarySection = () => {
 					fontFamily: `'Anaheim', sans-serif`,
 					textTransform: 'uppercase',
 				}}>Thank you for playing this explorable explanation!</p>
+				<p>Since you've made it here, <FormLink /> I'll even fill in the first question for you!</p>
 			</div>
 		</div >
 	);
