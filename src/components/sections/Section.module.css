@@ -3,7 +3,7 @@
 }
 
 .navButtonContainer {
-	background-color: var(--header-apple);
+	background-color: var(--apple);
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;

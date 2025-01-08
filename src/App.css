@@ -1,8 +1,6 @@
 :root {
 	--off-black: #191919;
 	--off-yellow: #FAF2E0;
-	--header-apple: #DE5F4A;
-	--header-pear: #B3CC65;
 	--apple: #DE5F4A;
 	--pear: #B3CC65;
 }
@@ -24,8 +22,8 @@ h2,
 h1 {
 	width: 100%;
 	margin-top: 0;
-	padding: 25px 25px 25px 25px;
-	background-color: var(--header-apple);
+	padding: 25px;
+	background-color: var(--apple);
 	font-family: 'Anaheim', sans-serif;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -45,11 +43,16 @@ h1 {
 
 .TitleCard {
 	width: 100%;
-	background-color: var(--header-apple);
+	background-color: var(--off-black);
+	color: var(--off-yellow);
+	padding: 25px 0;
+	margin: 0;
 }
 
 .TitleCard h1 {
-	padding-top: 25px;
+	padding: 0;
+	font-size: 50px;
+	background-color: var(--off-black);
 }
 
 .Credits {
