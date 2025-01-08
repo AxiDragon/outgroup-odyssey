@@ -1,4 +1,3 @@
-
 import { Chart, CategoryScale, LinearScale, Title, Tooltip, Legend, PointElement, LineElement, Filler } from "chart.js";
 import { useState } from "react";
 import { Line } from "react-chartjs-2";
@@ -18,7 +17,7 @@ const MemoryGraphSlider = () => {
 	const generateData = (formula: (x: number) => number, points: number[]) => {
 		return points.map(formula);
 	}
-
+ 
 	const formula = (x: number) => (1 - bias) * x * 5 + 5;
 
 	const yPoints = generateData(formula, Array.from({ length: pointCount }, (_, i) => i));

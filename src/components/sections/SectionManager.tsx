@@ -15,9 +15,15 @@ const SectionManager = () => {
 		const newSection = currentSection + direction;
 		setCurrentSection(newSection);
 
-		setTimeout(() => {
-			window.scrollTo(0, direction === 1 ? 0 : document.body.scrollHeight);
-		}, 0);
+		if (direction === 1) {
+			// using setTimeout here makes the document maintain the height of the previous section
+			// for some reason, this is necessary for the scroll to work properly
+			window.scrollTo(0, 0);
+		} else {
+			setTimeout(() => {
+				window.scrollTo(0, document.body.scrollHeight);
+			}, 0);
+		}
 	}
 
 	return (
