@@ -1,7 +1,8 @@
 :root {
 	--off-black: #191919;
-	--off-white: #FFF2F1;
-	--grey: #D7C0D0;
+	--off-yellow: #FAF2E0;
+	--header-apple: #DE5F4A;
+	--header-pear: #B3CC65;
 	--apple: #DE5F4A;
 	--pear: #B3CC65;
 }
@@ -24,7 +25,7 @@ h1 {
 	width: 100%;
 	margin-top: 0;
 	padding: 25px 25px 25px 25px;
-	background-color: var(--grey);
+	background-color: var(--header-apple);
 	font-family: 'Anaheim', sans-serif;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -44,7 +45,7 @@ h1 {
 
 .TitleCard {
 	width: 100%;
-	background-color: var(--grey);
+	background-color: var(--header-apple);
 }
 
 .TitleCard h1 {
@@ -64,9 +65,8 @@ h1 {
 }
 
 .PlayableContainer {
-	background-color: #FFF2F1;
+	background-color: var(--off-yellow);
 	color: var(--off-black);
-	box-shadow: 0 8px 4px var(--grey);
 	padding-top: 35px;
 	padding-bottom: 35px;
 	margin-top: 35px;

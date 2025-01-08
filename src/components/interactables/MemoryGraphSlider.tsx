@@ -106,7 +106,7 @@ const MemoryGraphSlider = () => {
 
 	return (
 		<div className="PlayableContainer">
-			<div className="Playable" >
+			<div className="Playable" style={{ maxWidth: '1000px' }}>
 				<Line data={data} options={options} />
 				<LabelledSlider type="bias" onChange={onBiasChange} value={bias} />
 				<p>For example, if there was a group of 50 people,
