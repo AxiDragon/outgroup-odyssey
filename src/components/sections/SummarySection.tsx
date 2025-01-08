@@ -16,9 +16,15 @@ const SummarySection = () => {
 						Rather than looking at what divides you, look at what unites you.</li>
 				</ul>
 				<br />
-				<p>Thank you for playing this explorable explanation!</p>
+				<p style={{
+					fontSize: '1.5em',
+					fontWeight: 'bold',
+					textAlign: 'center',
+					fontFamily: `'Anaheim', sans-serif`,
+					textTransform: 'uppercase',
+				}}>Thank you for playing this explorable explanation!</p>
 			</div>
-		</div>
+		</div >
 	);
 }
 
