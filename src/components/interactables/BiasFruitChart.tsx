@@ -37,6 +37,8 @@ const BiasFruitChart = () => {
 	return (
 		<div className="PlayableContainer">
 			<div className="Playable">
+				<FruitChart maxFruitsPerColumn={batchCount * 4} fruitData={getBiasedFruitData()} fruitHeight={15} />
+				<LabelledSlider type="bias" onChange={onBiasChange} value={bias} />
 				<p>In this example, there are a total of {batchCount * 6} candidates. With your current level of
 					bias, {batchCount} apples are perceived as friendly,
 					whilst <b>{batchCount - Math.floor(batchCount * bias)}</b> pears are perceived as friendly.
@@ -44,8 +46,6 @@ const BiasFruitChart = () => {
 					a <b>{Math.round(1 / (2 - bias) * 100)}%</b> chance that it is an apple,
 					and a <b>{Math.round((1 - 1 / (2 - bias)) * 100)}%</b> chance that it is a pear.
 				</p>
-				<FruitChart maxFruitsPerColumn={batchCount * 4} fruitData={getBiasedFruitData()} fruitHeight={20} />
-				<LabelledSlider type="bias" onChange={onBiasChange} value={bias} />
 			</div>
 		</div>
 	);

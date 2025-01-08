@@ -21,7 +21,7 @@ const Section = ({ children, onClickNavigation, style, disabledNavButtons = 'non
 			{children}
 			{
 				disabledNavButtons !== 'next' &&
-				<div className={styles.navButtonContainer} style={{ justifyContent: 'flex-end' }}>
+				<div className={styles.navButtonContainer} style={{ justifyContent: 'flex-end'}}>
 					<div onClick={() => onClickNavigation(1)}>
 						NEXT ▶
 					</div>
