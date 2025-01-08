@@ -90,7 +90,7 @@ const MemoryGraphSlider = () => {
 				title: {
 					display: true,
 					color: 'var(--off-black)',
-					text: "Traits to Remember",
+					text: "Brain Power",
 					font: {
 						size: 16,
 						weight: 600,
