@@ -5,7 +5,7 @@ import galaAndPears from "@a/intro/pears.png";
 import judgeApples from "@a/intro/judge-apples.png";
 import judgePears from "@a/intro/judge-pears.png";
 
-import Footnote from "../Footnote";
+import Sourcenote from "../SourceNote";
 import FruitChart from "../interactables/FruitChart";
 import ClickableFruitChart from "../interactables/ClickableFruitChart";
 
@@ -16,7 +16,7 @@ const TopicSection = () => {
 			<div className="SectionText">
 				<p>Outgroup homogeneity bias refers to the tendency to underestimate
 					the differences among members of a group that we're not a part of (the so-called outgroup).
-					<Footnote referenceId={1} /> </p>
+					<Sourcenote referenceId={1} /> </p>
 				<p>For example, we have apples and pears. If it helps, imagine that the apples are your group of friends,
 					whilst the pears are... accountants. Or construction workers. Or professional athletes.
 					Whatever you'd consider as an outgroup.</p>

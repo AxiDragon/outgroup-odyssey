@@ -1,4 +1,4 @@
-import Footnote from "../Footnote";
+import Sourcenote from "../SourceNote";
 import SolutionChart from "../interactables/SolutionChart";
 
 const SolutionSection = () => {
@@ -15,7 +15,7 @@ const SolutionSection = () => {
 					outgroup homogeneity bias? </p>
 				<p>One way is to find things that you have in common with people from outgroups. After all,
 					ingroups are based on things you have in common with other people - so, if you find something
-					you have in common with a person from an outgroup, you're creating a new ingroup!<Footnote referenceId={5} />
+					you have in common with a person from an outgroup, you're creating a new ingroup!<Sourcenote referenceId={5} />
 				</p>
 				<p>But, how do you find commonalities with every single person, ever?</p>
 				<p>Have a look at the graph below!</p>
