@@ -1,4 +1,4 @@
-const TopicSection = () => {
+const SummarySection = () => {
 	return (
 		<div className="Section">
 			<h2>TO SUMMARIZE</h2>
@@ -22,4 +22,4 @@ const TopicSection = () => {
 	);
 }
 
-export default TopicSection;
+export default SummarySection;

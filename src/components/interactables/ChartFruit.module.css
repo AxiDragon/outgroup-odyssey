@@ -1,5 +1,7 @@
 .fruit img,
 .fruit,
 .empty {
-	max-width: 100px;
+	max-width: 20vw;
+	max-height: 20vw;
+	object-fit: contain;
 }

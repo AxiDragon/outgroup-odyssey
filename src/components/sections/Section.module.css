@@ -1,0 +1,18 @@
+.Section {
+	width: 100%;
+}
+
+.navButtonContainer {
+	background-color: var(--grey);
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	padding: 25px;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Anaheim', sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: xx-large;
+}

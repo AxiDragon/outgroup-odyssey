@@ -7,7 +7,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Commissioner', sans-serif;
 	color: var(--off-black);
 	line-height: 1.5;
 	margin: 0;
@@ -22,8 +22,8 @@ img {
 h2,
 h1 {
 	width: 100%;
-	margin-top: 75px;
-	padding: 25px;
+	margin-top: 0;
+	padding: 25px 25px 25px 25px;
 	background-color: var(--grey);
 	font-family: 'Anaheim', sans-serif;
 	letter-spacing: 2px;
@@ -43,8 +43,12 @@ h1 {
 }
 
 .TitleCard {
-	margin-bottom: 25px;
 	width: 100%;
+	background-color: var(--grey);
+}
+
+.TitleCard h1 {
+	padding-top: 25px;
 }
 
 .Credits {
