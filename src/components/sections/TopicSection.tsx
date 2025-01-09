@@ -52,7 +52,7 @@ const TopicSection = () => {
 				<p>...compared to apples, there's less distribution between the three options.
 					Thus, Gala believes (AKA biases) that the friendliness of the pears (AKA outgroup)
 					is more similar (AKA homogenous) than that of the apples.</p>
-				<p>But, in reality, when we check the friendliness of all apples one by one...</p>
+				<p>But, in reality, when we check the friendliness of all apples and pears one by one...</p>
 			</div>
 			<ClickableFruitChart />
 			<div className="SectionText">
