@@ -61,7 +61,7 @@ const Sourcenote = ({ referenceId: sourceId }: Props) => {
 				style={getStyle()}
 				onClick={onPopupClick}
 			>{source}</span>
-			<sup onClick={onClick} style={{ color: 'var(--apple)' }}>[{sourceId}]</sup>
+			<sup onClick={onClick} style={{ color: 'var(--apple)', cursor: 'help' }}>[{sourceId}]</sup>
 		</>
 	);
 }
