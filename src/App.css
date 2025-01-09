@@ -55,16 +55,13 @@ h1 {
 	background-color: var(--off-black);
 }
 
-.Credits {
-	list-style-position: inside;
-}
-
 .PlayableContainer,
 .Section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	list-style-position: inside;
 }
 
 .PlayableContainer {
