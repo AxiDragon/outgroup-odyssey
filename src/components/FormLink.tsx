@@ -6,7 +6,7 @@ const FormLink = () => {
 	const link = isOnPhone ? baseLink + "Phone" : baseLink + "PC/Laptop";
 
 	return (
-		<p><a href={link}><b>Could you please fill in the form here?</b></a></p>
+		<p><a href={link} target="_blank"><b>Could you please fill in the form here?</b></a></p>
 	);
 }
 
