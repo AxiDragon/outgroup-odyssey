@@ -8,13 +8,13 @@ const ConfettiParticle = () => {
 	const xRef = useRef<number>((Math.random() * 1.1 - 0.1) * window.innerWidth);
 
 	const delay = Math.random() * 2;
-	const fallTime = 2 + Math.random() * 2;
+	const fallTime = 2 + Math.random() * 3;
 	const animationTime = 0.3 + Math.random() * 1;
 
 	useEffect(() => {
 		setTimeout(() => {
 			if (particleRef.current) {
-				particleRef.current.style.bottom = -25 + "px";
+				particleRef.current.style.bottom = -250 + "px";
 			}
 		}, delay * 1000);
 	}, []);
