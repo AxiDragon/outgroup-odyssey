@@ -8,15 +8,39 @@ import EffectSection from "./EffectSection";
 import SolutionSection from "./SolutionSection";
 import SummarySection from "./SummarySection";
 
+function getSectionFromUrl() {
+	const params = new URLSearchParams(window.location.search);
+	return parseInt(params.get('section') || '0');
+};
+
 const SectionManager = () => {
-	const [currentSection, setCurrentSection] = useState(0);
+	const [currentSection, setCurrentSection] = useState(getSectionFromUrl());
 
 	useEffect(() => {
-		window.history.pushState(null, '', `/${currentSection}`);
+		const onPopState = () => {
+			setCurrentSection(getSectionFromUrl());
+		}
+
+		window.addEventListener('popstate', onPopState);
+
+		return () => {
+			window.removeEventListener('popstate', onPopState);
+		}
+	}, []);
+
+	useEffect(() => {
+
 	}, [currentSection]);
 
 	const onClickNavigation = (direction: -1 | 1) => {
 		const newSection = currentSection + direction;
+
+		const params = new URLSearchParams(window.location.search);
+		params.set('section', newSection.toString());
+		const newUrl = `${window.location.pathname}?${params.toString()}`;
+
+		window.history.pushState({}, '', newUrl);
+
 		setCurrentSection(newSection);
 
 		if (direction === 1) {
