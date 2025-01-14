@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.a24b809c.css",
-    "main.js": "./static/js/main.f36d7714.js",
+    "main.css": "./static/css/main.585cb226.css",
+    "main.js": "./static/js/main.a426308b.js",
     "static/media/pears.png": "./static/media/pears.62f9033eeaa2ea52787f.png",
     "static/media/apples.png": "./static/media/apples.81c1f1df9ec7074610c6.png",
     "static/media/judge-apples.png": "./static/media/judge-apples.ac77cc8a5c3cd9f810b2.png",
     "static/media/judge-pears.png": "./static/media/judge-pears.2b907e26fcb63616aa52.png",
+    "static/media/title-pears.png": "./static/media/title-pears.ebd3887bfaec2d57b590.png",
     "static/media/friendly.png": "./static/media/friendly.f25940c8c63abc9517be.png",
+    "static/media/title-apples.png": "./static/media/title-apples.b68a6fc1a846e25811e7.png",
     "static/media/pear-friendly.png": "./static/media/pear-friendly.c46225545cdcfe7d35d8.png",
     "static/media/neutral.png": "./static/media/neutral.6befbdaf45c96d4d8235.png",
     "static/media/unfriendly.png": "./static/media/unfriendly.ba278e6b1542d2eb7cc7.png",
@@ -17,11 +19,11 @@
     "static/media/apple-unfriendly.png": "./static/media/apple-unfriendly.281b3170515b8d18b21b.png",
     "static/media/gala.png": "./static/media/gala.55aa3f3e429bd19c6f15.png",
     "index.html": "./index.html",
-    "main.a24b809c.css.map": "./static/css/main.a24b809c.css.map",
-    "main.f36d7714.js.map": "./static/js/main.f36d7714.js.map"
+    "main.585cb226.css.map": "./static/css/main.585cb226.css.map",
+    "main.a426308b.js.map": "./static/js/main.a426308b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a24b809c.css",
-    "static/js/main.f36d7714.js"
+    "static/css/main.585cb226.css",
+    "static/js/main.a426308b.js"
   ]
 }
