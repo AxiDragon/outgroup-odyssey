@@ -25,7 +25,7 @@ const SummarySection = () => {
 					fontFamily: `'Anaheim', sans-serif`,
 					textTransform: 'uppercase',
 				}}>Thank you for playing this explorable explanation!</p>
-				<p>Since you've made it here, <FormLink /> I'll even fill in the first question for you!</p>
+				<p>Since you've made it here,</p> <FormLink /> <p>I'll even fill in the first question for you!</p>
 			</div>
 		</div >
 	);
