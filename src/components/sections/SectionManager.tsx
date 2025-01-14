@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Section from "./Section"
 import TopicSection from "./TopicSection";
 import TitleCard from "../TitleCard";
@@ -10,6 +10,10 @@ import SummarySection from "./SummarySection";
 
 const SectionManager = () => {
 	const [currentSection, setCurrentSection] = useState(0);
+
+	useEffect(() => {
+		window.history.pushState(null, '', `/${currentSection}`);
+	}, [currentSection]);
 
 	const onClickNavigation = (direction: -1 | 1) => {
 		const newSection = currentSection + direction;
