@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.eac7a0e2.css",
-    "main.js": "./static/js/main.ec49efc3.js",
+    "main.js": "./static/js/main.6f315e58.js",
     "static/media/pears.png": "./static/media/pears.62f9033eeaa2ea52787f.png",
     "static/media/apples.png": "./static/media/apples.81c1f1df9ec7074610c6.png",
     "static/media/judge-apples.png": "./static/media/judge-apples.ac77cc8a5c3cd9f810b2.png",
@@ -20,10 +20,10 @@
     "static/media/gala.png": "./static/media/gala.55aa3f3e429bd19c6f15.png",
     "index.html": "./index.html",
     "main.eac7a0e2.css.map": "./static/css/main.eac7a0e2.css.map",
-    "main.ec49efc3.js.map": "./static/js/main.ec49efc3.js.map"
+    "main.6f315e58.js.map": "./static/js/main.6f315e58.js.map"
   },
   "entrypoints": [
     "static/css/main.eac7a0e2.css",
-    "static/js/main.ec49efc3.js"
+    "static/js/main.6f315e58.js"
   ]
 }
