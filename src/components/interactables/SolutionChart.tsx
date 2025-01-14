@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { FruitProps } from "./ChartFruit";
 import FruitChart from "./FruitChart";
 import LabelledSlider from "./LabelledSlider";
+import ConfettiSpawner from "../confetti/ConfettiSpawner";
 
 const batchCount = 30;
 
@@ -16,10 +17,14 @@ const SolutionChart = () => {
 	const shuffledFruits = initialFruits.sort(() => Math.random() - 0.5);
 
 	const fruitRef = useRef<FruitProps[]>([...Array(batchCount).fill({ fruitType: "apple", }), ...shuffledFruits]);
-
+	const confettiSpawnerRef = useRef<{ launchConfetti: () => void }>(null);
 	const [ingroupPercentage, setIngroupPercentage] = useState(0);
 
 	const onIngroupPercentageChange = (newValue: number) => {
+		if (newValue === 1) {
+			confettiSpawnerRef.current?.launchConfetti();
+		}
+
 		setIngroupPercentage(newValue);
 	}
 
@@ -68,6 +73,7 @@ const SolutionChart = () => {
 
 	return (
 		<div className="PlayableContainer">
+			<ConfettiSpawner ref={confettiSpawnerRef} />
 			<div className="Playable">
 				<FruitChart maxFruitsPerColumn={batchCount * 5} fruitData={getSplitData()} fruitHeight={10} type="in-outgroup" />
 				<LabelledSlider type="in-outgroup" onChange={onIngroupPercentageChange} value={ingroupPercentage} />

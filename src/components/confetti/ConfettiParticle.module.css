@@ -1,0 +1,23 @@
+.ConfettiParticle {
+	position: absolute;
+	border-radius: 50%;
+	pointer-events: none;
+	bottom: 110%;
+	will-change: transform, opacity;
+	animation: wobble 0.7s ease-in-out infinite;
+	animation-duration: 0.1s;
+}
+
+@keyframes wobble {
+	0% {
+		transform: translateX(-10px);
+	}
+
+	50% {
+		transform: translateX(10px);
+	}
+
+	100% {
+		transform: translateX(-10px);
+	}
+}

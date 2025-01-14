@@ -81,7 +81,6 @@ const SectionManager = () => {
 			<Section onClickNavigation={onClickNavigation}
 				disabledNavButtons="next"
 				style={{ display: currentSection === 5 ? 'block' : 'none' }}>
-				{/* TODO: Credits should definitely be a seperate section */}
 				<Credits />
 			</Section>
 		</div>
