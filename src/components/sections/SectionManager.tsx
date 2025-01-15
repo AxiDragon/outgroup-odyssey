@@ -52,6 +52,10 @@ const SectionManager = () => {
 				window.scrollTo(0, document.body.scrollHeight);
 			}, 0);
 		}
+
+		setTimeout(() => {
+			window.dispatchEvent(new Event('navigationClicked')); //let new section load in
+		}, 0);
 	}
 
 	return (

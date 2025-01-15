@@ -18,7 +18,7 @@ const LabelledSlider = ({ type, value, onChange }: Props) => {
 					min={0.0}
 					max={1.0}
 					value={value}
-					step={0.001}
+					step={0.01}
 					onChange={(e) => { onChange(parseFloat(e.target.value)) }}
 					style={{
 						accentColor: getColor((type === 'bias' ? value : 1 - value)),
