@@ -8,10 +8,12 @@ const ConfettiSpawner = forwardRef((props, ref) => {
 
 	useImperativeHandle(ref, () => ({
 		launchConfetti: () => {
-			setConfettiLaunched(true);
-			setTimeout(() => {
-				setConfettiLaunched(false);
-			}, 10000);
+			if (!confettiLaunched) {
+				setConfettiLaunched(true);
+				setTimeout(() => {
+					setConfettiLaunched(false);
+				}, 7000);
+			}
 		}
 	}));
 

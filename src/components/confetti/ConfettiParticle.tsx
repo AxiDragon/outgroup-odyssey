@@ -6,10 +6,10 @@ const ConfettiParticle = () => {
 	const colorRef = useRef<string>(Math.random() > 0.5 ? 'var(--apple)' : 'var(--pear)');
 	const sizeRef = useRef<number>(Math.random() * 15 + 10);
 	const xRef = useRef<number>((Math.random() * 1.1 - 0.1) * window.innerWidth);
+	const animationTimeRef = useRef<number>(0.3 + Math.random() * 1);
 
 	const delay = Math.random() * 2;
 	const fallTime = 2 + Math.random() * 3;
-	const animationTime = 0.3 + Math.random() * 1;
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -26,7 +26,7 @@ const ConfettiParticle = () => {
 			width: sizeRef.current,
 			height: sizeRef.current,
 			left: xRef.current,
-			animationDuration: `${animationTime}s`,
+			animationDuration: `${animationTimeRef.current}s`,
 		}} />
 	);
 }
