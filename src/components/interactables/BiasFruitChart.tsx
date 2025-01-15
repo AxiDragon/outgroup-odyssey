@@ -37,7 +37,7 @@ const BiasFruitChart = () => {
 	return (
 		<div className="PlayableContainer">
 			<div className="Playable">
-				<FruitChart maxFruitsPerColumn={batchCount * 4} fruitData={getBiasedFruitData()} fruitHeight={15} />
+				<FruitChart maxFruitsPerColumn={batchCount * 4} fruitData={getBiasedFruitData()} fruitHeight={12} />
 				<LabelledSlider type="bias" onChange={onBiasChange} value={bias} />
 				<p>In this example, there are a total of {batchCount * 6} candidates. With your current level of
 					bias, {batchCount} apples are perceived as friendly,
