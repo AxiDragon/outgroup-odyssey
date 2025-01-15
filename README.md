@@ -1,4 +1,4 @@
-![title](https://github.com/user-attachments/assets/f9696ec8-38d4-4585-849c-7a072d7e6b90)
+# ![title](https://github.com/user-attachments/assets/f9696ec8-38d4-4585-849c-7a072d7e6b90)
 
 Outgroup Odyssey is an explorable explanation about outgroup homogeneity bias - a cognitive bias where we believe that members of groups that we don't belong to are more similar to each other than they actually are.
 
