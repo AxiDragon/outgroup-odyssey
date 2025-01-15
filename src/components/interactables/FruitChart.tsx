@@ -17,7 +17,6 @@ const FruitChart = ({ fruitData, maxFruitsPerColumn = 4, fruitHeight = 100, type
 	const [data, setData] = useState(fruitData.map(c => [...c]));
 	const [adjustedMaxFruitsPerColumn, setAdjustedMaxFruitsPerColumn] = useState(maxFruitsPerColumn);
 
-	//TODO: fix the flexbox issue with the graph not being a matrix
 	//fill in empty spaces with 'none' fruits, to ensure each column has the same length
 
 	const columnRef = useRef<HTMLDivElement>(null);
