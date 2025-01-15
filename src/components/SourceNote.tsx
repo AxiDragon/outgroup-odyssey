@@ -20,6 +20,9 @@ const maxWidth = 500;
 const Sourcenote = ({ referenceId: sourceId }: Props) => {
 	const [show, setShow] = useState(false);
 	const [clickPosition, setClickPosition] = useState({ x: 0, y: 0 });
+	const [copiedPosition, setCopiedPosition] = useState({ x: 0, y: 0 });
+	const copiedRef = useRef<HTMLSpanElement>(null);
+
 	const source = sources[sourceId - 1];
 
 	useEffect(() => {
@@ -30,8 +33,29 @@ const Sourcenote = ({ referenceId: sourceId }: Props) => {
 		}
 	}, [show]);
 
-	const onPopupClick = () => {
+	useEffect(() => {
+		const removeFade = () => {
+			if (copiedRef.current) {
+				copiedRef.current.classList.remove(styles.fade);
+			}
+		}
+
+		window.addEventListener('navigationClicked', removeFade);
+
+		return () => {
+			window.removeEventListener('navgiatonClicked', removeFade);
+		}
+	}, []);
+
+	const onPopupClick = (event: MouseEvent<HTMLElement>) => {
 		navigator.clipboard.writeText(source);
+		setCopiedPosition({ x: event.clientX, y: event.clientY });
+
+		if (copiedRef.current) {
+			copiedRef.current.classList.remove(styles.fade);
+			void copiedRef.current.offsetWidth;
+			copiedRef.current.classList.add(styles.fade);
+		}
 	}
 
 	const onClick = (event: MouseEvent<HTMLElement>) => {
@@ -41,7 +65,7 @@ const Sourcenote = ({ referenceId: sourceId }: Props) => {
 		}, 0); //let the click event finish before showing the popup, so that the click event doesn't close the popup
 	};
 
-	const getStyle = (): CSSProperties => {
+	const getSourcePopUpStyle = (): CSSProperties => {
 		const { innerWidth, scrollY } = window;
 
 		const onRight: boolean = clickPosition.x > innerWidth / 2;
@@ -55,12 +79,25 @@ const Sourcenote = ({ referenceId: sourceId }: Props) => {
 		};
 	}
 
+	const getCopiedPopupStyle = (): CSSProperties => {
+		const { scrollY } = window;
+
+		return {
+			left: copiedPosition.x,
+			top: copiedPosition.y + scrollY,
+		};
+	}
+
 	return (
 		<>
 			<span className={styles.sourcePopup}
-				style={getStyle()}
+				style={getSourcePopUpStyle()}
 				onClick={onPopupClick}
 			>{source}</span>
+			<span className={styles.copiedPopup}
+				ref={copiedRef}
+				style={getCopiedPopupStyle()}
+			>Copied!</span>
 			<sup onClick={onClick} style={{ color: 'var(--apple)', cursor: 'help' }}>[{sourceId}]</sup>
 		</>
 	);

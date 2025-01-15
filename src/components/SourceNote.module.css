@@ -9,3 +9,39 @@
 	box-shadow: 0 0 10px var(--off-black);
 	transition: opacity 0.5s;
 }
+
+.copiedPopup {
+	color: var(--apple);
+	position: absolute;
+	display: flex;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	pointer-events: none;
+	text-shadow:
+		-1px -1px 0 white,
+		1px -1px 0 white,
+		-1px 1px 0 white,
+		1px 1px 0 white;
+	font-weight: bold;
+	opacity: 0;
+}
+
+.fade {
+	animation: fade 3s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+}
+
+@keyframes fade {
+	0% {
+		transform: translateY(0);
+	}
+
+	15% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+}
