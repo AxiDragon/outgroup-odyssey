@@ -14,11 +14,7 @@ type Props = {
 };
 
 const FruitChart = ({ fruitData, maxFruitsPerColumn = 4, fruitHeight = 100, type = 'friendliness' }: Props) => {
-	const [data, setData] = useState(fruitData.map(c => [...c]));
 	const [adjustedMaxFruitsPerColumn, setAdjustedMaxFruitsPerColumn] = useState(maxFruitsPerColumn);
-
-	//fill in empty spaces with 'none' fruits, to ensure each column has the same length
-
 	const columnRef = useRef<HTMLDivElement>(null);
 
 	const refresh = () => {
@@ -33,7 +29,7 @@ const FruitChart = ({ fruitData, maxFruitsPerColumn = 4, fruitHeight = 100, type
 
 			for (let columns = 1; columns < children.length; columns++) {
 				if (children[columns].getBoundingClientRect().left === leftmostPosition) {
-					setAdjustedMaxFruitsPerColumn(maxFruitsPerColumn + (columns - maxFruitsPerColumn % columns));
+					setAdjustedMaxFruitsPerColumn(maxFruitsPerColumn + ((columns - maxFruitsPerColumn % columns) % columns));
 					break;
 				}
 			}
@@ -75,24 +71,12 @@ const FruitChart = ({ fruitData, maxFruitsPerColumn = 4, fruitHeight = 100, type
 		};
 	}, []);
 
-	useEffect(() => {
-		let fruitDataCopy = fruitData.map(c => [...c]);
-
-		fruitDataCopy.forEach(c => {
-			while (c.length < adjustedMaxFruitsPerColumn) {
-				c.unshift({ fruitType: 'none' });
-			}
-		});
-
-		setData(fruitDataCopy);
-	}, [fruitData, adjustedMaxFruitsPerColumn]);
-
 	return (
 		<div className={styles.parentContainer}>
 			<div className={styles.container}>
 				<div className={styles.fruitColumnContainer}>
 					{
-						data.map((column, i) => (
+						fruitData.map((column, i) => (
 							(type !== 'in-outgroup' || i !== 2) &&
 							<div
 								key={i}
@@ -105,6 +89,9 @@ const FruitChart = ({ fruitData, maxFruitsPerColumn = 4, fruitHeight = 100, type
 									borderTopRightRadius: 5,
 								}}
 							>
+								{Array(adjustedMaxFruitsPerColumn - column.length).fill(null).map((_, j) => (
+									< ChartFruit key={column.length + j} fruitType="none" height={fruitHeight} />
+								))}
 								{column.map((fruit, j) => (
 									type === 'in-outgroup' ?
 										<ChartFruit key={j} fruitType={fruit.fruitType} subType={i === 0 ? 'neutral' : 'friendly'} height={fruitHeight} />

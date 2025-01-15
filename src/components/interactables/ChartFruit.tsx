@@ -8,7 +8,7 @@ import pearFriendly from "@a/graph/pear-friendly.png";
 import pearNeutral from "@a/graph/pear-neutral.png";
 import pearUnfriendly from "@a/graph/pear-unfriendly.png";
 
-export type FruitType = 'apple' | 'pear' | 'orange' | 'none';
+export type FruitType = 'apple' | 'pear' | 'none';
 export type SubType = 'friendly' | 'neutral' | 'unfriendly';
 
 export type FruitProps = {
@@ -34,7 +34,6 @@ const ChartFruit = ({ fruitType, subType = 'neutral', height = 100 }: FruitProps
 					case 'unfriendly': return pearUnfriendly;
 					default: return pearNeutral;
 				}
-			case 'orange':
 			default: return appleNeutral;
 		}
 	}
