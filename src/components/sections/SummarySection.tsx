@@ -26,6 +26,9 @@ const SummarySection = () => {
 					textTransform: 'uppercase',
 				}}>Thank you for playing this explorable explanation!</p>
 				<p>Since you've made it here,</p> <FormLink /> <p>I'll even fill in the first question for you!</p>
+				<p style={{
+					fontSize: '12px',
+				}}><i>Note - I am no longer using results from the form!</i></p>
 			</div>
 		</div >
 	);
